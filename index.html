@@ -2,43 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" ">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Michael Bell</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 <body>
-    <header>
-        <h2 class="name">michaelBell</h2>
-        <nav>
-            <ul class="headerNav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Values</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Endorsements</a></li>
-                <li class="actionCall"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="wrapper">
-        <section class="iDevelop">
-            <h1>iDevelop</h2>
-            <h3>Let's scale together.</h3>
-        </section>
-        <section class="fullStack">
-            <h1>fullStack</h2>
-            <h3>HTML5</h3>
-            <h3>CSS3</h3>
-            <h3>JavaScript</h3>
-            <h3>React.js</h3>
-            <h3>Node.js</h3>
-            <h3>Python</h3>
-        </section>
-        <section class="webApps">
-            <h1>webApps</h2>
-            <h3>View my portfolio.</h3>
-        </section>
-    </main>
+    <div class="content-wrapper">
+        <header id='header' class="animated fadeInDown delay-2s">
+            <h2 class="name-in-header">MB</h2>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="./Public/docs/Michael's Resume.pdf" target="_blank"><i class="fas fa-file-download"></i> Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-wrapper">
+            <section class="hero-section">
+                <h1 class="hero-header animated fadeInDown delay-1s">Michael Bell</h1>
+                <h2 class="hero-sub-header animated zoomIn delay-1s">Software Engineer</h2>
+                <p class="hero-brand-statement animated fadeInUp delay-1s">I am a passionate software 
+                developer with a relentless growth mindset. My background is 
+                in high-growth-business accounting. From Silicon Valley 
+                to the DC start-up scene, I provide a cross-functional 
+                perspective that spans across engineering and business 
+                to achieve high-quality outcomes for stakeholders. 
+                I believe in continuous learning and the power of 
+                collaboration to achieve success.</p>
+            </section>
+            <section class="portfolio">
+                <h2 class="h2-portfolio">Portfolio</h2>
+                <div class="projects-wrapper">
+                    <div class="each-project project-1">
+                        <a class="project-links" href="https://pages.git.generalassemb.ly/MBell/Project-1-Strooper/"></a>
+                    </div>
+                    <div class="p1-wrapper">
+                        <h3 class="project-header">Strooper</h3>
+                        <p></p>
+                    </div>
+                    <div class="each-project project-2">
+                        <a href='#'></a>
+                    </div>
+                    <div class="each-project project-3">
+                        <a href="#"></a>
+                    </div>
+                    <div class="p3-wrapper">
+                        <h3 class="project-header">Pickup Games</h3>
+                        <p></p>
+                    </div>
+                    <div class="each-project project-4">
+                        <a href="#"></a>
+                    </div>
+                    <div class="p4-wrapper">
+                        <h3 class="project-header">Cash Board</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul class="footer-ul">
+                    <li>
+                        <a href="https://github.com/MdotB?tab=repositories" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/michael-bell-5b546822/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+ 
+    <script src='script.js'></script>
 </body>
 </html>
