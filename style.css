@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #f7f7ff;
-    background-color: rgba(40, 44, 52, .1);
+    background-color: rgba(40, 44, 52, .7);
     position: fixed;
     top: 0;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
