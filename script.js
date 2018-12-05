@@ -12,7 +12,7 @@ window.onscroll = () => {
 
 // This is to control scroll animations using "ScrollReveal library".
 ScrollReveal().reveal(".h2-portfolio", { delay: 1000 });
-ScrollReveal().reveal(".project-1", { delay: 1500 });
-ScrollReveal().reveal(".project-2", { delay: 1500 });
-ScrollReveal().reveal(".project-3", { delay: 1500 });
-ScrollReveal().reveal(".project-4", { delay: 1500 });
+ScrollReveal().reveal(".p4-container", { delay: 1300 });
+ScrollReveal().reveal(".p1-container", { delay: 1300 });
+ScrollReveal().reveal(".p2-container", { delay: 1300 });
+// ScrollReveal().reveal(".p2-container", { delay: 1500 });
