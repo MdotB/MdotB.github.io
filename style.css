@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     font-family: 'Abel', sans-serif;
     height: 100%;
-    color: rgba(255, 251, 250, .2);
+    color: #333;
 }
 .content-wrapper {
     display: flex;
@@ -20,22 +20,36 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f7f7ff;
-    background-color: rgba(40, 44, 52, .7);
+    color: white;
     position: fixed;
     top: 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
-        0 3px 6px rgba(0,0,0,0.23);
-    transition: top 0.3s;
+    transition: background 0.3s;
 }
 .name-in-header {
-    background-color: rgba(40, 44, 52, .1);
-    margin-left: 25px;
+    margin: 0 0 0 25px;
     padding: 3px 10px;
-    border: 1px solid #4392F1;
     border-radius: 2px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
+}
+a {
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 14px 10px 14px 10px;
+}
+a:hover {
+    color: #999;
+}
+.header-nav {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
 }
 main {
     display: flex;
@@ -51,7 +65,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,16 +85,16 @@ main {
     top:0;
     left:0;
     z-index:-1;
-    background:rgba(0,0,0,.5);
+    background:rgba(0,0,0,.75);
     position:absolute;
 }
 .hero-header {
-    font-family: 'Montserrat', sans-serif;
+    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 800;
     border-radius: 2px;
     color: #F7F7FF;
     text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    font-size: 75px;
+    font-size: 80px;
     margin: 0 0 5px 0;
 }
 .hero-sub-header {
@@ -91,16 +105,19 @@ main {
     font-size: 2em;
 }
 .hero-brand-statement {
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: Esteban, Georgia, 'Times New Roman', serif;
     margin: 10px 0 10px 0;
     text-align: center;
     max-width: 490px;
-    font-size: 16.5px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 2em;
-    color: #F7F7FF;
+    color: rgb(255, 243, 109);
 }
 .skills {
+    color: white;
+    background-color: #333;
     border: 1px solid #333;
     padding: 7px;
     margin-bottom: 7px; 
@@ -121,8 +138,7 @@ main {
     font-weight: 800;
     border-radius: 2px;
     text-align: center;
-    color: #4392F1;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #ddd;
 }
 .projects-wrapper {
     display: flex;
@@ -139,19 +155,19 @@ main {
     align-items: center;
     background-color: white;
     border-radius: 2px;
-    border: 1px solid #ddd;
+    border: .5px solid #ddd;
     margin: 0 25px 25px 25px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .project-header {
-    color: #6d6d6d;
+    color: #4392F1;
     font-size: 36px;
     margin-bottom: 20px;
     text-align: left;
 }
 .project-text {
     font-size: 22px;
-    color: black;
+    color: #333;
     max-width: 450px;
     padding: 40px;
 }
@@ -165,7 +181,8 @@ main {
 
 }
 img {
-    width: 300px;
+    position: relative;
+    width: 400px;
     height: auto;
 }
 .card-link-wrapper {
@@ -177,16 +194,7 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
-    background-color: #424B54;
-}
-.header-nav {
-    padding: 10px;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: #333;
 }
 li {
     display: inline-block;
@@ -196,16 +204,7 @@ li:last-child {
     margin: auto;
     flex-grow: 2;
 }
-a {
-    color: #F7F7FF;
-    font-weight: 100;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 14px 10px 14px 10px;
-}
-a:hover {
-    color: #4392F1;
-}
+
 h3 {
     font-weight: 300;
     text-align: center;
@@ -218,12 +217,7 @@ h3 {
     margin: 0;
     padding: 0;
 }
-footer > nav > ul > li > a {
-    color: #FFFBFA;
-}
-footer > nav > ul > li > a:hover {
-    color: #4392F1;
-}
+
 .fab {
     font-size: 28px;
     margin: 0;
@@ -234,7 +228,7 @@ footer > nav > ul > li > a:hover {
 @media screen and (max-width: 768px) {
 
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .hero-header {
         font-size: 50px;
         margin-bottom: 0;
