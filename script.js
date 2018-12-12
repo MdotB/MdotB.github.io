@@ -16,6 +16,15 @@ window.onscroll = () => {
   prevScrollPos = currentScrollPos;
 }
 
+// Open nav overlay
+const openNav = () => {
+  document.getElementById("myNav").style.width="100%";
+}
+// Close nav overlay
+const closeNav = () => {
+  document.getElementById("myNav").style.width="0%";
+}
+
 // This is to control scroll animations using "ScrollReveal library".
 ScrollReveal().reveal(".h2-portfolio", { delay: 500 });
 ScrollReveal().reveal(".p4-container", { delay: 900 });

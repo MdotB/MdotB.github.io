@@ -28,7 +28,6 @@ header {
     margin: 0 0 0 25px;
     padding: 3px 10px;
     border-radius: 2px;
-
 }
 a {
     color: #999;
@@ -47,6 +46,40 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 30000;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 main {
     display: flex;
@@ -97,13 +130,7 @@ main {
 .hero-subheader {
     color: white;
 }
-/* .hero-sub-header {
-    font-family: 'Roboto', sans-serif;
-    color: #4392F1;
-    margin: 0;
-    font-weight: 600;
-    font-size: 5vw;
-} */
+
 .hero-brand-statement {
     font-family: Esteban, Georgia, 'Times New Roman', serif;
     margin: 10px 0 10px 0;
