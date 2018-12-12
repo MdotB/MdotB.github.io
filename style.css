@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     font-family: 'Abel', sans-serif;
     height: 100%;
-    color: #333;
+    color: white;
 }
 .content-wrapper {
     display: flex;
@@ -20,7 +20,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
     position: fixed;
     top: 0;
     transition: background 0.3s;
@@ -32,24 +31,22 @@ header {
 
 }
 a {
-    color: white;
+    color: #999;
     font-weight: 100;
     font-size: 18px;
     text-decoration: none;
     padding: 14px 10px 14px 10px;
 }
 a:hover {
-    color: #999;
+    color: white;
 }
 .header-nav {
     padding: 10px;
     margin: 0;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
 }
 main {
     display: flex;
@@ -65,12 +62,12 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: calc(100vh - 50px);
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: left; 
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -92,32 +89,35 @@ main {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 800;
     border-radius: 2px;
-    color: #F7F7FF;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    line-height: 1;
+    color: #4392F1;
     font-size: 80px;
     margin: 0 0 5px 0;
 }
-.hero-sub-header {
+.hero-subheader {
+    color: white;
+}
+/* .hero-sub-header {
     font-family: 'Roboto', sans-serif;
     color: #4392F1;
     margin: 0;
     font-weight: 600;
-    font-size: 2em;
-}
+    font-size: 5vw;
+} */
 .hero-brand-statement {
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: Esteban, Georgia, 'Times New Roman', serif;
     margin: 10px 0 10px 0;
-    text-align: center;
-    max-width: 490px;
-    font-size: 22px;
+    text-align: left;
+    min-width: 350px;
+    max-width: 480px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 2em;
-    color: rgb(255, 243, 109);
+    line-height: 1.9em;
+    color: white;
 }
 .skills {
-    color: white;
-    background-color: #333;
+    color: #333;
+    background-color: white;
     border: 1px solid #333;
     padding: 7px;
     margin-bottom: 7px; 
@@ -130,11 +130,13 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: #E7F0FF;
+    /* background-color: #E7F0FF; */
+    background-color: black;
+
 }
 .h2-portfolio {
     font-family: 'Montserrat', sans-serif;
-    font-size: 85px;
+    font-size: 5vw;
     font-weight: 800;
     border-radius: 2px;
     text-align: center;
@@ -153,7 +155,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-color: #333;
     border-radius: 2px;
     border: .5px solid #ddd;
     margin: 0 25px 25px 25px;
@@ -162,12 +164,12 @@ main {
 .project-header {
     color: #4392F1;
     font-size: 36px;
-    margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 0;
 }
 .project-text {
     font-size: 22px;
-    color: #333;
+    color: white;
     max-width: 450px;
     padding: 40px;
 }
