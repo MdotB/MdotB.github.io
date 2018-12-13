@@ -95,7 +95,7 @@ main {
     max-width: 100vw;
 }
 .hero-section {
-    background-image: url("./Public/img/asphalt-bitumen-black-compressed.jpg");
+    background-image: url("./Public/img/asphalt-bitumen-black-compressed.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
