@@ -25,9 +25,7 @@ header {
     transition: background 0.3s;
 }
 .name-in-header {
-    margin: 0 0 0 25px;
-    padding: 3px 10px;
-    border-radius: 2px;
+    padding: 20px 0 20px 20px;
 }
 a {
     color: #999;
@@ -40,12 +38,16 @@ a:hover {
     color: white;
 }
 .header-nav {
-    padding: 10px;
+    padding: 20px 20px 0 0;
     margin: 0;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.header-nav li, .header-nav li a {
+    margin: 0;
+    padding: 0;
 }
 .overlay {
     height: 100%;
@@ -55,7 +57,7 @@ a:hover {
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,.9);
     overflow-x: hidden;
 }
 .overlay-content {
@@ -95,7 +97,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +109,14 @@ main {
     z-index:3;
     padding: 0 20px;
 }
-
+.page-marker {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    color: #818181;
+    font-size: 22px;
+}
 .hero-section:after {
     content:"";
     width:100%;
@@ -163,7 +172,7 @@ main {
 }
 .h2-portfolio {
     font-family: 'Montserrat', sans-serif;
-    font-size: 5vw;
+    font-size: 50px;
     font-weight: 800;
     border-radius: 2px;
     text-align: center;
@@ -255,9 +264,14 @@ h3 {
 
 }
 @media screen and (max-width: 768px) {
-
+    .page-marker {
+        display: none;
+    }
 }
 @media screen and (max-width: 500px) {
+    .here-section::after {
+        background-color: black;
+    }
     .hero-header {
         font-size: 50px;
         margin-bottom: 0;
