@@ -61,6 +61,7 @@ a:hover {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,.9);
     overflow-x: hidden;
+    transition: 0.3s;
 }
 .overlay-content {
     position: relative;
@@ -113,7 +114,7 @@ main {
     padding: 0 20px;
 }
 .page-marker {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 50%;
     transform: rotate(-90deg);
@@ -193,7 +194,7 @@ main {
     align-items: center;
     background-color: #333;
     border-radius: 2px;
-    margin: 0 25px 25px 25px;
+    margin: 0 20px 20px 20px;
     overflow: hidden;
     width: 100vw;
 }
@@ -269,7 +270,6 @@ h3 {
     }
 }
 @media screen and (max-width: 500px) {
-    
     .hero-section::after {
         background-color: black;
     }
