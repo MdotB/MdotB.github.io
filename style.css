@@ -161,13 +161,6 @@ main::after {
     line-height: 1.9em;
     color: white;
 }
-.skills {
-    color: #333;
-    background-color: white;
-    padding: 7px;
-    margin-bottom: 7px;
-}
-
 .portfolio {
     width: 100vw;
     display: flex;
@@ -202,17 +195,31 @@ main::after {
     overflow: hidden;
     width: 100vw;
 }
+.project-text {
+    max-width: 450px;
+    padding: 40px;
+    text-align: left;
+}
 .project-header {
     color: #4392F1;
     font-size: 36px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
 }
-.project-text {
-    font-size: 22px;
-    color: white;
-    max-width: 450px;
-    padding: 40px;
+.project-paragraph {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.skills-wrapper {
+    margin: 0;
+    padding: 0;
+}
+.skills {
+    color: #333;
+    background-color: white;
+    padding: 7px;
+    text-align: left;
+    margin-bottom: 7px;
 }
 .project-link {
     color: #4392F1;
@@ -246,12 +253,6 @@ li {
 li:last-child {
     margin: auto;
     flex-grow: 2;
-}
-
-h3 {
-    font-weight: 300;
-    text-align: center;
-    margin-top: 10px;
 }
 .fa-home {
     font-size: 22px;
