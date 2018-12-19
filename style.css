@@ -63,6 +63,7 @@ a:hover {
 .overlay-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .overlay a {
     padding: 8px;
@@ -115,7 +116,7 @@ main {
     top:0;
     left:0;
     z-index:-1;
-    background:rgba(0,0,0,.75);
+    background:rgba(0, 0, 0, 0.75);
     position:absolute;
 }
 .page-marker {
@@ -285,7 +286,7 @@ li:last-child {
     }
     .h2-portfolio {
         font-size: 28px;
-        margin: 40px 0 10px 5px;
+        margin: 15px 0 15px 5px;
         align-self: center;
     }
     .each-project {
