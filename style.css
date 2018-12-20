@@ -186,7 +186,7 @@ main {
 }
 .project-text {
     max-width: 310px;
-    padding: 30px;
+    padding: 30px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -271,7 +271,7 @@ li:last-child {
         height: 90vh;
     }
     .hero-section:after {
-        background-color: black;
+        background-color: #333;
     }
     .hero-header {
         font-size: 50px;
@@ -302,6 +302,7 @@ li:last-child {
     }
     .project-paragraph {
         text-align: center;
+
     }
     img {
         width: 200px;
