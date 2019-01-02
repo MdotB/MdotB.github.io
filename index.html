@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://unpkg.com/scrollreveal">
-        ScrollReveal({ reset: true });
-    </script>
 </head>
 <body>
     <div id="top" class="content-wrapper">
@@ -35,24 +32,28 @@
             </div>
         </nav>
 
-        <header id='header' class="animated fadeInDown delay-1s">
-            <a style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></a>
-            <h2 class="name-in-header"><a href="#top">Michael Bell</a></h2>
+        <header id="hero-section">
+            <nav class="animated fadeInDown delay-1s">
+                <a style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></a>
+                <h2 class="name-in-header"><a href="#top">Michael Bell</a></h2>
+            </nav>
+            <h2 class="page-marker">Welcome</h2>
+            <h1 class="hero-header animated fadeInUp delay-2s">Michael Bell<br>
+                <span class="hero-subheader">Software <br>Engineer</span>
+            </h1>
+            
         </header>
-        <main class="main-wrapper">
-            <section class="hero-section">
-                <h2 class="page-marker">Welcome</h2>
-                <h1 class="hero-header animated fadeInUp delay-2s">Michael Bell <br>
-                <span class="hero-subheader">Software <br>Engineer</span></h1>
-                <p class="hero-brand-statement animated fadeInUp delay-2s">A passionate innovator 
-                with a relentless growth mindset. My background is 
-                in high-growth-business accounting. From Silicon Valley 
-                to the DC start-up scene, I provide a cross-functional 
-                perspective that spans across engineering and business 
-                to achieve high-quality outcomes for stakeholders. 
-                I believe in continuous learning and the power of 
-                collaboration to achieve success.</p>
+        <main>
+            <section id="About-Me">
+                <h2 class="page-marker">About Me</h2>
+                <img src="Public/img/IMG_1926.jpg" id="headshot" alt="Picture of Mike Bell">
+                <p id="brand-statement">A curious and pragmatic software developer with a relentless growth mindset. 
+                    My background is in high-growth-business accounting. From Silicon Valley to the DC start-up scene, 
+                    I provide a cross-functional perspective that spans across engineering and business to achieve high-quality 
+                    outcomes for stakeholders. I believe in continuous learning and the power of collaboration to achieve success.
+                </p>
             </section>
+            <hr>
             <section class="portfolio">
                 <div class="projects-wrapper">
                     <h2 class="h2-portfolio">Recent Projects</h2>
@@ -139,9 +140,9 @@
                     </li>
                 </ul>
             </nav>
+            <p>© 2019 Michael Bell. All rights reserved.</p>
         </footer>
     </div>
- 
     <script src='script.js'></script>
 </body>
 </html>

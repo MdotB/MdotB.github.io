@@ -24,9 +24,3 @@ const openNav = () => {
 const closeNav = () => {
   document.getElementById("myNav").style.width="0%";
 }
-
-// This is to control scroll animations using "ScrollReveal library".
-ScrollReveal().reveal(".h2-portfolio", { delay: 500 });
-ScrollReveal().reveal(".p4-container", { delay: 600 });
-ScrollReveal().reveal(".p1-container", { delay: 600 });
-ScrollReveal().reveal(".p2-container", { delay: 600 });
