@@ -8,7 +8,6 @@ html, body {
     width: 100vw;
     color: white;
     background-color: #eee;
-    margin-bottom: 2px;
 }
 .content-wrapper {
     display: flex;
@@ -42,13 +41,14 @@ a {
     padding: 30px 0 0 30px;
 }
 a:hover {
-    text-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23);
+    /* text-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23); */
     color: #f1f1f1;
 }
 .overlay {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     width: 0;
     position: fixed;
@@ -58,17 +58,17 @@ a:hover {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,.9);
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.15s;
 }
 .overlay-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 50px 0 0 30px;
 }
 .overlay-content > h2 {
-    margin-top: 0;
+    margin-top: 30px;
 }
 .overlay-content > a {
     padding: 8px;
@@ -204,7 +204,8 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 15px;
 }
 .h2-portfolio {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -221,7 +222,7 @@ hr {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 2px;
-    margin: 0 20px 20px 0;
+    margin: 0 15px 15px 0;
     overflow: hidden;
     padding: 15px;
 }
@@ -314,6 +315,16 @@ li:last-child {
     }
 }
 @media screen and (max-width: 500px) {
+    .overlay-content {
+        align-self: center;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: 20px;
+        padding: 30px 50px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23);
+    }
     #hero-section {
         height: 37vh;
         justify-content: center;

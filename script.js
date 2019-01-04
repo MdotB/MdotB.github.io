@@ -15,12 +15,16 @@
 //   }
 //   prevScrollPos = currentScrollPos;
 // }
-
+const navOverlay = document.getElementById("myNav");
 // Open nav overlay
 const openNav = () => {
-    document.getElementById("myNav").style.width="100%";
+  if (window.innerWidth < 500) {
+    navOverlay.style.width="100%";
+  } else {
+    navOverlay.style.width="25%";
+  }
 }
 // Close nav overlay
 const closeNav = () => {
-  document.getElementById("myNav").style.width="0%";
+  navOverlay.style.width="0%";
 }
