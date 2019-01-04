@@ -89,13 +89,15 @@ a:hover {
     font-size: 50px;
 }
 #hero-section {
-    background-image: url("./Public/img/asphalt-bitumen-black-compressed.png");
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    /* background-color: 
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 55vh;
+    background-repeat: no-repeat; */
+    width: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +116,7 @@ a:hover {
     top:0;
     left:0;
     z-index:-1;
-    background:rgba(0, 0, 0, 0.75);
+    background:rgba(0, 0, 0, 0.6);
     position:absolute;
 }
 .hero-header {
@@ -199,8 +201,9 @@ hr {
 .projects-wrapper {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
     justify-content: center;
 }
 .h2-portfolio {
@@ -212,19 +215,18 @@ hr {
     margin: 50px 0 10px 15px;
 }
 .each-project {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 2px;
-    margin: 0 0 20px 0;
+    margin: 0 20px 20px 0;
     overflow: hidden;
+    padding: 15px;
 }
 .project-text {
     max-width: 310px;
-    padding: 30px 0 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -251,23 +253,23 @@ hr {
     color: #fff;
     background-color: #333;
     padding: 7px;
+    border-radius: 2px;
     margin-bottom: 7px;
 }
 .card-link-wrapper {
     justify-self: flex-end;
     padding: 15px 0;
-    text-align: left;
 }
 .project-link {
     color: #4392F1;
     font-size: 30px;
     padding-left: 10px;
 }
-img {
+/* img {
     position: relative;
     width: 250px;
     height: auto;
-}
+} */
 footer {
     display: flex;
     flex-direction: column;
@@ -336,10 +338,11 @@ li:last-child {
         width: 90vw;
     }
     #brand-statement {
-        font-size: 15px;
+        font-size: 16px;
         width: 80vw;
         padding: 0;
         margin-left: 0;
+        text-align: center;
 
     }
     .h2-portfolio {
@@ -351,6 +354,8 @@ li:last-child {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        margin-right: 0;
     }
     .project-text {
         align-items: center;
