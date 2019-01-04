@@ -27,7 +27,14 @@ header nav {
     top: 0;
     transition: background 0.3s;
 }
-.name-in-header {
+nav ul {
+    padding: 0;
+    vertical-align: bottom;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.header-nav-links {
     padding: 30px 30px 0 0;
 }
 a {
@@ -42,7 +49,7 @@ a {
 }
 a:hover {
     /* text-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23); */
-    color: #f1f1f1;
+    color: #ccc;
 }
 .overlay {
     display: flex;
@@ -56,7 +63,7 @@ a:hover {
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.95);
     overflow-x: hidden;
     transition: 0.15s;
 }
@@ -91,13 +98,8 @@ a:hover {
 #hero-section {
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-    /* background-color: 
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     width: 100%;
-    height: 50vh;
+    height: 48vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,10 +123,10 @@ a:hover {
 }
 .hero-header {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1;
     color: #4392F1;
-    font-size: 80px;
+    font-size: 75px;
     margin: 0 0 5px 0;
 }
 .hero-subheader {
@@ -150,7 +152,7 @@ main {
     min-width: 80vw;
 }
 #About-Me {
-    height: 40vh;
+    height: 39vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -164,16 +166,13 @@ main {
     padding: 0 20px;
 }
 #headshot {
-    height: 275px;
+    height: 270px;
     width: auto;
     flex-shrink: 0;
-    border: 3px solid #333;
+    border: 2px solid #333;
     border-radius: 2px;
     transition: all .5s ease-in-out;
     overflow: hidden;
-}
-#headshot:hover {
-    /* transform: rotateY(180deg);  */
 }
 #brand-statement {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -189,6 +188,7 @@ main {
 hr {
     color: #333;
     width: 100%;
+    margin: 0;
 }
 .portfolio {
     width: 100%;
@@ -204,16 +204,16 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    justify-content: flex-start;
+    justify-content: first baseline;
     padding: 0 15px;
 }
 .h2-portfolio {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
     align-self: flex-start;
     color: #333;
-    margin: 50px 0 10px 15px;
+    margin: 40px 0 10px 15px;
 }
 .each-project {
     display: flex;
@@ -244,6 +244,7 @@ hr {
     margin: 10px 0;
     text-align: left;
     color: #333;
+    max-width: 300px;
 }
 .skills-wrapper {
     margin: 0;
@@ -320,7 +321,7 @@ li:last-child {
         margin-left: 0;
         justify-content: center;
         align-items: center;
-        background-color: #333;
+        background-color: #222;
         border-radius: 20px;
         padding: 30px 50px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23);
@@ -328,7 +329,6 @@ li:last-child {
     #hero-section {
         height: 37vh;
         justify-content: center;
-        background-attachment: none;
     }
     .hero-header {
         font-size: 50px;
