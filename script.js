@@ -21,7 +21,7 @@ const openNav = () => {
   if (window.innerWidth < 500) {
     navOverlay.style.width="100%";
   } else {
-    navOverlay.style.width="25%";
+    navOverlay.style.width="250px";
   }
 }
 // Close nav overlay
