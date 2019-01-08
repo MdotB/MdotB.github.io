@@ -17,7 +17,7 @@
 // }
 
 // Redirect to gh-pages
-window.location = "https://mdotb.github.io/";
+window.location.href = "https://mdotb.github.io/";
 
 const navOverlay = document.getElementById("myNav");
 // Open nav overlay
