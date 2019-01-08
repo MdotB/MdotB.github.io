@@ -61,7 +61,7 @@ a:hover {
 .overlay-content > a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     color: #818181;
     display: block;
     transition: all .2s ease-in-out;
