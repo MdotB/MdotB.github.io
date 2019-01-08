@@ -16,30 +16,6 @@ html, body {
     align-items: center;
     width: 100%;
 }
-#header-nav {
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-    width: 100%;
-    height: 70px;
-    z-index: 10000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    margin: 0;
-    box-shadow: 2px 4px 10px rgba(0,0,0,.2);
-}
-#header-nav > ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header-nav-links {
-    padding-right: 30px;
-}
 a {
     color: #999;
     font-weight: 100;
@@ -101,20 +77,18 @@ a:hover {
     left: 30px;
     font-size: 50px;
 }
-#hero-section {
+header {
     width: 100%;
-    height: 70px;
+    height: 250px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    text-align: left; 
+    justify-content: center;
+    text-align: center; 
     position: relative;
-    background-attachment: fixed;
-    box-shadow: 2px 4px 10px rgba(0,0,0,.2);
     z-index:3;
 }
-#hero-section:after {
+header:after {
     content:"";
     width:100%;
     height:100%;
@@ -123,6 +97,39 @@ a:hover {
     z-index:-1;
     background:rgba(0, 0, 0, 0.6);
     position:absolute;
+}
+#header-nav {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    width: 100%;
+    height: 70px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.2);
+}
+#header-nav > ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-nav-links {
+    padding-right: 30px;
+}
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    /* top: 70px; */
 }
 #hero-header {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -152,7 +159,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 80vw;
+    width: 90vw;
     padding: 0 15px;
 }
 #About-Me {
@@ -160,7 +167,6 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: #fff; */
     border-radius: 2px;
     margin: 20px 0 20px 0;
     overflow: hidden;
@@ -168,7 +174,7 @@ main {
     padding: 0;
 }
 #headshot {
-    height: 300px;
+    height: 250px;
     width: auto;
     flex-shrink: 0;
     border: 2px solid #333;
@@ -178,11 +184,11 @@ main {
 }
 #brand-statement {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 25px;
+    padding: 0 0 0 25px;
     margin: 0;
     text-align: left;
     max-width: 600px;
-    font-size: 20.5px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.9em;
     color: #333;
@@ -324,12 +330,27 @@ li:last-child {
     font-size: 28px;
     margin: 0;
 }
-@media screen and (max-width: 900px) {
-
+@media screen and (max-width: 1010px) {
+    #brand-statement {
+        font-size: 1rem;
+    }
+    #headshot {
+        height: 270px;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
+    #brand-statement: 
+}
+@media screen and (max-width: 780px) {
     .page-marker {
         display: none;
+    }
+    #About-Me {
+        /* flex-direction: column; */
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        margin: 20px 0;
     }
 }
 @media screen and (max-width: 500px) {
@@ -369,7 +390,7 @@ li:last-child {
     #headshot {
         margin-bottom: 20px;
         height: auto;
-        width: 70vw;
+        max-width: 250px;
     }
     #brand-statement {
         font-size: 16px;
@@ -388,7 +409,6 @@ li:last-child {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
         margin-right: 0;
     }
     .project-text {
