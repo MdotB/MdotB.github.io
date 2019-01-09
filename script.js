@@ -17,15 +17,24 @@
 // }
 
 const navOverlay = document.getElementById("myNav");
+
 // Open nav overlay
 const openNav = () => {
-  if (window.innerWidth < 500) {
-    navOverlay.style.width="100%";
-  } else {
-    navOverlay.style.width="250px";
-  }
+    if (window.innerWidth < 500) {
+      navOverlay.style.width="100%";
+    } else {
+      navOverlay.style.width="250px";
+    }
 }
 // Close nav overlay
 const closeNav = () => {
   navOverlay.style.width="0%";
+}
+// Toggle nav
+const toggleNav = () => {
+    if (navOverlay.style.width == "0%") {
+      openNav()
+    } else {
+      closeNav()
+    }
 }
