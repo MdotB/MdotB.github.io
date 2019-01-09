@@ -62,7 +62,7 @@
         </header>
         <main>
             <section id="hero-section">
-                <h1 id="hero-header">Mike Bell</h1>
+                <h1 id="hero-header" class="animated fadeInLeft delay-1s">Mike Bell</h1>
                 <h2 class="hero-subheader animated fadeInUp delay-1s">Software Engineer</h2>
             </section>
             <section id="About-Me">
@@ -75,9 +75,9 @@
                 </p>
             </section>
             
-            <section class="portfolio">
+            <section id="portfolio">
                 <hr>
-                <h2 class="h2-portfolio">Recent Projects</h2>
+                <h2 class="section-header">Recent Projects</h2>
                 <div class="projects-wrapper">
                     <div class="each-project" id="p4-container">
                             <h3 class="project-header">Cash Board</h3>
@@ -129,7 +129,18 @@
                 </div>
                 <hr>
             </section>
-            
+            <section id="contact-me">
+                <h2 class="section-header">Contact Me</h2>
+                <form action="">
+                    <label for="fname" id="fname" name="fname">First Name</label>
+                    <input type="text">
+                    <label for="lname" id="lname" name="lname">Last Name</label>
+                    <input type="text">
+                    <label for="email">Email</label>
+                    <input type="email">
+                </form>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </section>
         </main>
         <footer>
             <nav>
