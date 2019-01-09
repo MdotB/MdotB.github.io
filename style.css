@@ -281,7 +281,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 50px;
 }
 form {
@@ -452,5 +452,13 @@ li:last-child {
         font-size: 16px;
         padding: 7px;
         margin-bottom: 7px;
+    }
+    form {
+        width: 100%;
+    }
+    button {
+        align-self: flex-end;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transform: scale(1.04);
     }
 }
