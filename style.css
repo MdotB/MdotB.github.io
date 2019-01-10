@@ -486,7 +486,7 @@ li:last-child {
     button {
         margin-bottom: 0;
         justify-self: flex-end;
-        /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         transform: scale(1.04) translateY(50%);
     }
 }
