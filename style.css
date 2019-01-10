@@ -6,7 +6,7 @@ html, body {
     font-family: 'Abel', sans-serif;
     height: 100%;
     width: 100vw;
-    color: white;
+    color: #fff;
     background-color: #eee;
 }
 .content-wrapper {
@@ -32,7 +32,7 @@ a {
 a:hover {
     color: #ccc;
 }
-.overlay {
+#myNav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -72,12 +72,6 @@ a:hover {
     color: #f1f1f1;
     transform: scale(1.1);
   }
-/* .overlay .closebtn {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    font-size: 50px;
-} */
 header {
     width: 100%;
     height: 70px;
@@ -417,7 +411,7 @@ li:last-child {
         font-size: 24px;
     }
     main {
-        width: 90vw;
+        width: 100vw;
     }
     #About-Me {
         transform: translateY(calc(292px * -.5));
@@ -469,6 +463,9 @@ li:last-child {
         padding: 7px;
         margin-bottom: 7px;
     }
+    #contact-me {
+        position: relative;
+    }
     #contact-header {
         text-align: center;
         font-size: 23px;
@@ -477,8 +474,19 @@ li:last-child {
         width: 100%;
         padding: 0 15px;
     }
+    #under-button {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        width: 75px;
+        height: 75px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
     button {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        transform: scale(1.04);
+        margin-bottom: 0;
+        justify-self: flex-end;
+        /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+        transform: scale(1.04) translateY(50%);
     }
 }
