@@ -280,13 +280,14 @@ hr {
     justify-content: flex-start;
     align-items: center;
     margin: 50px 50px;
+    position: relative;
 }
 #contact-header {
     align-self: center;
 }
 form {
     width: 500px;
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
 }
 #name-fields {
     display: flex;
@@ -309,7 +310,21 @@ textarea {
 #fname {
     margin-right: 15px;
 }
+#under-button {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 75px;
+    height: 75px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-top: 30px;
+}
 button {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    transform: translateY(50%);
     align-self: center;
     width: 55px;
     height: 55px;
@@ -318,14 +333,13 @@ button {
     transition: all .2s ease-in-out;
     background-color: #4392F1;
     border-color: #4392F1;
-    margin-bottom: 50px;
 }
 button:focus {
     outline: none;
 }
 button:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transform: scale(1.04);
+    transform: scale(1.04) translateY(50%);
 }
 .fa-paper-plane {
     color: #fff;
@@ -389,12 +403,11 @@ li:last-child {
 }
 @media screen and (max-width: 500px) {
     .overlay-content {
-        align-self: center;
-        margin-left: 0;
-        justify-content: center;
-        align-items: center;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
         border-radius: 20px;
-        padding: 30px 50px;
+        padding: 0 15px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23);
     }
     #header-nav {
