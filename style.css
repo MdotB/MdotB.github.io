@@ -200,8 +200,8 @@ hr {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     padding: 0;
     margin-bottom: 50px;
 }
@@ -209,7 +209,6 @@ hr {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 26px;
     font-weight: 400;
-    align-self: center;
     color: #333;
     margin: 40px 0 40px 0;
 }
@@ -238,6 +237,7 @@ hr {
     background-position: center center;
 }
 .project-header {
+    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777;
     font-size: 32px;
     font-weight: 500;
@@ -339,7 +339,7 @@ button:focus {
 }
 button:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transform: scale(1.04) translateY(50%);
+    transform: scale(1.05) translateY(50%);
 }
 .fa-paper-plane {
     color: #fff;

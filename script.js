@@ -22,9 +22,8 @@ const navOverlay = document.getElementById("myNav");
 const openNav = () => navOverlay.style.width="250px";
 
 // Close nav overlay
-const closeNav = () => {
-  navOverlay.style.width="0%";
-}
+const closeNav = () => navOverlay.style.width="0%";
+
 // Toggle nav
 const toggleNav = () => {
     if (navOverlay.style.width == "0%") {
