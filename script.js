@@ -17,13 +17,18 @@
 // }
 
 const navOverlay = document.getElementById("myNav");
+const pushNav = document.getElementById("pushNav");
 
 // Open nav overlay
-const openNav = () => navOverlay.style.width="250px";
-
+const openNav = () => {
+  navOverlay.style.width="250px";
+  pushNav.style.margin="0 0 0 500px";
+}
 // Close nav overlay
-const closeNav = () => navOverlay.style.width="0%";
-
+const closeNav = () => {
+  navOverlay.style.width="0%";
+  pushNav.style.margin="0";
+}
 // Toggle nav
 const toggleNav = () => {
     if (navOverlay.style.width == "0%") {
