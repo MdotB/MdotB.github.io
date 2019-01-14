@@ -158,7 +158,6 @@ main {
     align-items: center;
     width: 90vw;
     padding: 0 15px;
-    margin-right: 0;
 }
 #About-Me {
     width: 100%;
@@ -425,13 +424,22 @@ li:last-child {
     #header-nav {
         justify-content: space-around;
     }
+    #burger-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 20px;
+    }
+    #header-nav > ul {
+        visibility: hidden;
+    }
     #hero-section {
         justify-content: flex-start;
-        height: 35vh;
     }
     #hero-header {
         font-size: 50px;
-        margin-top: 30px;
+        
     }
     .hero-subheader {
         font-size: 24px;
@@ -440,14 +448,12 @@ li:last-child {
         width: 100vw;
     }
     #About-Me {
-        transform: translateY(calc(292px * -.5));
         flex-direction: column;
         padding: 0;
         margin: 0;
-        z-index: 4;
     }
     #headshot {
-        margin: 0 0 50px 0;
+        margin-top: 30px;
         height: auto;
         max-width: 200px;
     }
@@ -456,8 +462,8 @@ li:last-child {
         line-height: 1.7em;
         font-size: 20px;
         width: 100%;
-        padding: 0;
-        margin-left: 0;
+        padding: 20px;
+        margin: 10px 0;
         text-align: center;
     }
     .h2-portfolio {
