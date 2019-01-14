@@ -228,12 +228,11 @@ hr {
     border-radius: 5px;
     margin: 0 15px 15px 0;
     overflow: hidden;
-    padding: 15px;
+    padding: 30px;
 }
 .each-project:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transform: scale(1.04);
-    cursor: pointer;
 }
 #p4-container {
     background-size: cover;
