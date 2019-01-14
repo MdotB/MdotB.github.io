@@ -48,13 +48,14 @@ a:hover {
     overflow-x: hidden;
     transition: 0.3s;
     width: 0;
+    white-space: nowrap;
 }
 .overlay-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 20px 0 0 20px;
+    margin: 50px 0 0 20px;
 }
 .overlay-content > h2 {
     font-size: 20px;
@@ -232,6 +233,7 @@ hr {
 .each-project:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transform: scale(1.04);
+    cursor: pointer;
 }
 #p4-container {
     background-size: cover;
