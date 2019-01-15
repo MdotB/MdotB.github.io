@@ -8,6 +8,7 @@ html, body {
     width: 100vw;
     color: #fff;
     background-color: #eee;
+    scroll-behavior: smooth;
 }
 .content-wrapper {
     display: flex;
@@ -22,6 +23,7 @@ html, body {
     align-items: center;
     margin: 0;
     transition: .3s;
+    box-shadow: 5px 0 3px -3px #000;
 }
 a {
     color: #999;
@@ -32,11 +34,9 @@ a {
 }
 #burger-menu {
     margin-left: 30px;
-    z-index: 5;
 }
 .fa-bars {
     font-weight: 600;
-    z-index: 5;
 }
 a:hover {
     color: #ccc;
@@ -53,35 +53,42 @@ a:hover {
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,.95);
+    background-color: #000;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: .3s;
     white-space: nowrap;
 }
 .overlay-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: flex-start;
-    margin: 50px 0 0 20px;
+    margin-top: 50px;
+    padding: 0;
 }
 .overlay-content > h2 {
+    width: 100%;
     font-size: 20px;
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0px;
+    margin: 0;
+    background-color: #333;
+    padding: 10px;
 }
 .overlay-content > a {
-    padding: 5px;
+    padding: 5px 25px;
     word-wrap: none;
     text-decoration: none;
     font-size: 24px;
     color: #818181;
+    border-bottom: 1px solid #333;
     display: block;
     transition: all .2s ease-in-out;
   }
 .overlay-content a:hover, .overlay-content a:focus {
-    color: #f1f1f1;
-    transform: scale(1.05);
+    color: #fff;
+    background-color: #444;
+    transform: scale(1.01);
   }
 header {
     width: 100%;
@@ -108,7 +115,6 @@ header::after {
     position: fixed;
     top: 0;
     margin: 0;
-    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
 #header-nav > ul {
     padding: 0;
@@ -221,7 +227,6 @@ hr {
 }
 .each-project {
     width: 355px;
-    height: calc(355px * .75);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,12 +418,13 @@ li:last-child {
 }
 @media screen and (max-width: 500px) {
     .overlay-content {
-        margin: 40px 15px 0 0;
+        display: block;
+        margin: 40px 0 0 0;
         justify-content: flex-start;
         align-items: flex-start;
-        border-radius: 20px;
-        padding: 0 15px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .overlay-content > a {
+        padding: 15px 25px;
     }
     #header-nav {
         justify-content: space-between;
