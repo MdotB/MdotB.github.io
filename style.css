@@ -23,7 +23,7 @@ html, body {
     align-items: center;
     margin: 0; 
     transition: .3s;
-    box-shadow: 5px 0 3px -3px #000;
+    box-shadow: -5px 0 3px -3px #000;
 }
 a {
     color: #999;
@@ -73,7 +73,7 @@ a:hover {
     font-size: 20px;
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
-    background-color: #333;
+    background-color: #222;
     padding: 10px;
 }
 .overlay-content > a {
@@ -91,24 +91,25 @@ a:hover {
     background-color: #444;
     transform: scale(1.01);
   }
-  .overlay-content > .closebtn {
-      align-self: flex-end;
-      font-size: 40px;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-  }
-  .overlay-content > .closebtn:hover {
+.overlay-content > .closebtn {
+    align-self: flex-end;
+    font-size: 40px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.overlay-content > .closebtn:hover {
       background-color: #000;
   }
 header {
     width: 100%;
     position: relative;
     z-index:1;
+    background-color: #222;
 }
-header::after {
+/* pushNav::after {
     content:"";
     width:100%;
     height:100%;
@@ -117,7 +118,7 @@ header::after {
     z-index:-1;
     background:rgba(0, 0, 0, 0.6);
     position:absolute;
-}
+} */
 #header-nav {
     background-color: rgba(0,0,0,0);
     width: 100%;
@@ -146,7 +147,6 @@ header::after {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-color: #333;
     padding: 20px 0;
 }
 #hero-header {
@@ -384,7 +384,7 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
-    background-color: #333;
+    background-color: #222;
 }
 footer > p {
     margin: 0 0 20px 0;
