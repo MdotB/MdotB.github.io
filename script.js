@@ -25,7 +25,7 @@ const openNav = () => {
   pushNav.style.marginLeft="500px";
 }
 // Close nav overlay
-const closeNav = () => {
+const closeNav = () => {  
   sideNav.style.width="0%";
   pushNav.style.margin="0";
 }
