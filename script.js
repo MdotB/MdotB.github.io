@@ -21,8 +21,12 @@ const pushNav = document.getElementById("pushNav");
 
 // Open nav overlay
 const openNav = () => {
-  sideNav.style.width="250px";
-  pushNav.style.marginLeft="500px";
+  if (myNav.style.width === "0%") {
+    sideNav.style.width="250px";
+    pushNav.style.marginLeft="500px";
+  } else {
+    
+  }
 }
 // Close nav overlay
 const closeNav = () => {  
