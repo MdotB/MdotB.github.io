@@ -21,7 +21,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0; 
     transition: .3s;
     box-shadow: 5px 0 3px -3px #000;
 }
@@ -37,6 +37,7 @@ a {
 }
 .fa-bars {
     font-weight: 600;
+    color: #999;
 }
 a:hover {
     color: #ccc;
