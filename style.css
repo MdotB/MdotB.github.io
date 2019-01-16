@@ -65,7 +65,7 @@ a:hover {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    margin-top: 50px;
+    margin: 0;
     padding: 0;
 }
 .overlay-content > h2 {
@@ -90,6 +90,18 @@ a:hover {
     color: #fff;
     background-color: #444;
     transform: scale(1.01);
+  }
+  .overlay-content > .closebtn {
+      align-self: flex-end;
+      font-size: 40px;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+  }
+  .overlay-content > .closebtn:hover {
+      background-color: #000;
   }
 header {
     width: 100%;
@@ -421,7 +433,6 @@ li:last-child {
 @media screen and (max-width: 500px) {
     .overlay-content {
         display: block;
-        margin: 40px 0 0 0;
         justify-content: flex-start;
         align-items: flex-start;
     }
