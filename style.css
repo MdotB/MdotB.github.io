@@ -434,7 +434,7 @@ li:last-child {
         padding: 20px;
     }
     #header-nav > ul {
-        display: none;
+        visibility: hidden;
     }
     #hero-section {
         justify-content: flex-start;
