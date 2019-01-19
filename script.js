@@ -31,7 +31,7 @@ const closeNav = () => {
 }
 // Toggle nav
 const toggleNav = () => {
-    if (myNav.style.width === "0%") {
+    if (sideNav.style.width === "0%") {
       openNav()
     } else {
       closeNav()

@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-    
+    <!--Pop-out nav menu-->
     <div id="top" class="content-wrapper">
-
-        <!--Pop-out nav menu-->
         <nav id="myNav" class="overlay" style="width: 0%">
             <div class="overlay-content">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
@@ -36,7 +34,6 @@
                 </a>
             </div>
         </nav>
-
             <header id="header">
                 <nav id="header-nav">
                     <a id="home" href="index.html" class="animated fadeInLeft"><h4>MichaelBell</h4></a>
@@ -54,16 +51,21 @@
                     <!-- <a><i id="burger-menu" style="font-size:30px;cursor:pointer" onclick="toggleNav()"class="fas fa-bars"></i></a> -->
                 </nav>
             </header>
-            <main>
-                <section id="hero-section">
-                    <h2 id="hero-header" class="animated fadeIn delay-1s">A curious and pragmatic software developer with a 
-                            relentless growth mindset.</h2>
-                    <p id="brand-statement" class="animated fadeIn delay-2s">I provide a cross-functional perspective that spans across engineering and business to 
+        <main id="main">
+            <section id="About-Me">
+                <h2 class="page-marker">About Me</h2>
+                <div>
+                    <h1 id="hero-header" class="animated fadeInDown delay-1s">Mike Bell</h1>
+                    <h2 class="hero-subheader animated fadeInUp delay-1s">Software Engineer</h2>
+                    <p id="brand-statement">A curious and pragmatic software developer with a 
+                        relentless growth mindset. I leverage my accounting background to provide a 
+                        cross-functional perspective that spans across engineering and business to 
                         achieve high-quality outcomes for stakeholders. I believe in continuous learning 
                         and the power of collaboration to achieve success.
                     </p>
-                </section>
-            </main>
+                </div>
+            </section>
+        </main>
         <footer>
             <p>© 2019 Michael Bell. All rights reserved.</p>
             <nav>
@@ -81,7 +83,6 @@
                 </ul>
             </nav>
         </footer>
-        <!-- </div> -->
     </div>
     <script src='script.js'></script>
 </body>

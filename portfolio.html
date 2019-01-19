@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-    
+    <!--Pop-out nav menu-->
     <div id="top" class="content-wrapper">
-
-        <!--Pop-out nav menu-->
         <nav id="myNav" class="overlay" style="width: 0%">
             <div class="overlay-content">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
@@ -36,7 +34,6 @@
                 </a>
             </div>
         </nav>
-
             <header id="header">
                 <nav id="header-nav">
                     <a id="home" href="index.html" class="animated fadeInLeft"><h4>MichaelBell</h4></a>
@@ -55,15 +52,58 @@
                 </nav>
             </header>
             <main>
-                <section id="hero-section">
-                    <h2 id="hero-header" class="animated fadeIn delay-1s">A curious and pragmatic software developer with a 
-                            relentless growth mindset.</h2>
-                    <p id="brand-statement" class="animated fadeIn delay-2s">I provide a cross-functional perspective that spans across engineering and business to 
-                        achieve high-quality outcomes for stakeholders. I believe in continuous learning 
-                        and the power of collaboration to achieve success.
-                    </p>
-                </section>
-            </main>
+            <section id="portfolio">
+                    <h2 class="section-header">Recent Projects</h2>
+                    <div class="projects-wrapper">
+                        <div class="each-project" id="p4-container">
+                            <h3 class="project-header">Cash Board</h3>
+                            <p class="project-paragraph">A personal finance dashboard that allows users to log and track income and expense data.</p>
+                            <ul class="skills-wrapper">
+                                <li class="skills">ES6</li>
+                                <li class="skills">React</li>
+                                <li class="skills">Node</li>
+                                <li class="skills">Express</li>
+                                <li class="skills">MongoDB</li>
+                            </ul>
+                            <div class="card-link-wrapper">
+                                <a class="project-link" href='https://cash-board.netlify.com/' target="_blank">Demo</a>
+                                <a class="project-link" href="https://github.com/MdotB/project-4-react" target="_blank">Repo</a>
+                            </div>
+                        </div>
+                        <div class="each-project p1-container">
+                                <h3 class="project-header">Strooper</h3>
+                                <p class="project-paragraph">A 2-D timed-response browser game based on the Stroop Test from cognitive psychology.</p>
+                                <ul class="skills-wrapper">
+                                    <li class="skills">HTML5</li>
+                                    <li class="skills">CSS3</li>
+                                    <li class="skills">ES6</li>
+                                </ul>
+                                <div class="card-link-wrapper">
+                                    <a class="project-link" href='https://pages.git.generalassemb.ly/MBell/Project-1-Strooper/' target="_blank">Demo</a>
+                                    <a class="project-link" href="https://git.generalassemb.ly/MBell/Project-1-Strooper" target="_blank">Repo</a>
+                                </div>
+                        </div>
+                        <div class="each-project p2-container">
+                            <h3 class="project-header">Fotogenic</h3>
+                            <p class="project-paragraph">Upload, comment and share images within the Fotogenic community.</p>
+                            <ul class="skills-wrapper">
+                                <li class="skills">ES6</li>
+                                <li class="skills">Node</li>
+                                <li class="skills">Express</li>
+                                <li class="skills">Handlebars</li>
+                                <li class="skills">MongoDB</li>
+                                <li class="skills">Passport</li>
+                                <li class="skills">Bootstrap 4</li>
+                            </ul>
+                            <div class="card-link-wrapper">
+                                <a class="project-link" href='https://protected-fortress-17795.herokuapp.com/' target="_blank">Demo</a>
+                                <a class="project-link" href="https://git.generalassemb.ly/MBell/face-detective" target="_blank">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+                
+        </main>
         <footer>
             <p>© 2019 Michael Bell. All rights reserved.</p>
             <nav>
@@ -81,7 +121,6 @@
                 </ul>
             </nav>
         </footer>
-        <!-- </div> -->
     </div>
     <script src='script.js'></script>
 </body>

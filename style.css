@@ -3,12 +3,19 @@
 }
 html, body {
     margin: 0;
-    font-family: 'Abel', sans-serif;
-    height: 100%;
     width: 100vw;
+    height: 100%;
     color: #fff;
     background-color: #eee;
     scroll-behavior: smooth;
+    font-family: 'Gilroy', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    overflow: auto;
 }
 .content-wrapper {
     display: flex;
@@ -16,14 +23,14 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 #pushNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     margin: 0; 
     transition: .3s;
     box-shadow: -5px 0 3px -3px #000;
+    /* overflow: auto; */
 }
 a {
     color: #999;
@@ -33,6 +40,7 @@ a {
     padding: 14px 10px 14px 10px;
 }
 #burger-menu {
+    display: none;
     margin-left: 30px;
 }
 .fa-bars {
@@ -43,7 +51,7 @@ a:hover {
     color: #ccc;
 }
 #myNav {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -104,10 +112,11 @@ a:hover {
       background-color: #000;
   }
 header {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
     width: 100%;
-    position: relative;
-    z-index:1;
-    background-color: #222;
+    height: auto;
 }
 /* pushNav::after {
     content:"";
@@ -119,46 +128,37 @@ header {
     background:rgba(0, 0, 0, 0.6);
     position:absolute;
 } */
+h4 {
+    margin:0;
+    font-size: 1.2em;
+}
 #header-nav {
-    background-color: rgba(0,0,0,0);
+    height: auto;
     width: 100%;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     margin: 0;
+    padding: 0 100px;
 }
+
 #header-nav > ul {
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.header-nav-links {
-    padding-right: 30px;
-}
-#hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    padding: 20px 0;
+    justify-content: space-between;
 }
 #hero-header {
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    line-height: 1;
+    font-weight: bold;
+    max-width: 940px;
+    line-height: 1.2em;
     color: #4392F1;
-    font-size: 60px;
-    margin: 0;
+    font-size:47px;
+    margin: 0 0 30px 0;
 }
 .hero-subheader {
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-weight: 800;
     font-size: 30px;
     color: white;
@@ -172,12 +172,9 @@ header {
     font-size: 22px;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 100px;
+    margin-top: 40px;
 }
 #About-Me {
     width: 100%;
@@ -190,7 +187,7 @@ main {
     padding: 0;
 }
 #headshot {
-    height: 250px;
+    height: 200px;
     width: auto;
     flex-shrink: 0;
     border: 2px solid #333;
@@ -199,11 +196,10 @@ main {
     overflow: hidden;
 }
 #brand-statement {
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 0 0 0 25px;
-    margin: 0;
+    padding: 0;
+    margin: 0 0 50px 0;
     text-align: left;
-    max-width: 600px;
+    max-width: 800px;
     font-size: 19px;
     font-weight: 500;
     line-height: 1.9em;
@@ -214,33 +210,28 @@ hr {
     width: 100%;
     margin: 0;
 }
-#portfolio {
-    width: 100%;
+/* #portfolio {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    background-color: #eee;
-}
+} */
 .projects-wrapper {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 50px;
 }
 .section-header {
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 26px;
     font-weight: 400;
     color: #333;
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
 }
 .each-project {
-    width: 355px;
+    width: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,12 +256,12 @@ hr {
 .project-header {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 500;
     margin: 0;
 }
 .project-paragraph {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 10px 0;
     text-align: left;
     color: #333;
@@ -285,9 +276,9 @@ hr {
     font-size: 12px;
     color: #fff;
     background-color: #333;
-    padding: 5px;
+    padding: 1px 5px;
     border-radius: 2px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 .card-link-wrapper {
     align-self: flex-end;
@@ -299,13 +290,13 @@ hr {
     font-size: 30px;
 }
 #contact-me {
-    background-color: #ccc;
+    background-color: #4392F1;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 50px 50px;
+    margin: 0 0 50px 0;
 }
 #contact-header {
     align-self: center;
@@ -377,18 +368,17 @@ button:hover {
 }
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: auto;
+    justify-content: space-between;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: #222;
+    height:100%;
+    padding: 50px 100px 30px 100px;
 }
 footer > p {
-    margin: 0 0 20px 0;
+    margin: 0;
     text-align: center;
+    color: #333;
 }
 li {
     display: inline-block;
@@ -411,7 +401,7 @@ li:last-child {
 }
 @media screen and (max-width: 1010px) {
     #brand-statement {
-        font-size: 1rem;
+        font-size: 1em;
     }
     #headshot {
         height: 270px;
@@ -431,6 +421,9 @@ li:last-child {
     }
 }
 @media screen and (max-width: 500px) {
+    .content-wrapper {
+        height: 100%;
+    }
     .overlay-content {
         display: block;
         justify-content: flex-start;
@@ -439,28 +432,27 @@ li:last-child {
     .overlay-content > a {
         padding: 15px 25px;
     }
+    .closebtn > i { 
+        font-size: 25px;
+    }
     #header-nav {
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     #burger-menu {
         margin: 0;
         padding: 20px;
     }
     #header-nav > ul {
-        visibility: hidden;
+        display: none;
     }
     #hero-section {
-        justify-content: flex-start;
+        justify-content: space-around;
     }
     #hero-header {
-        font-size: 50px;
-        
+        font-size: 30px;
     }
     .hero-subheader {
-        font-size: 24px;
-    }
-    main {
-        width: 100vw;
+        font-size: 16px;
     }
     #About-Me {
         flex-direction: column;
@@ -470,7 +462,7 @@ li:last-child {
     #headshot {
         margin-top: 30px;
         height: auto;
-        max-width: 200px;
+        max-width: 50px;
     }
     #brand-statement {
         font-family: Arial, Helvetica, sans-serif;
@@ -528,7 +520,7 @@ li:last-child {
         transform: translateY(50%);
         width: 75px;
         height: 75px;
-        background-color: #eee;
+        background-color: #fff;
         border-radius: 50%;
     }
     button, button:hover {
