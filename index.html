@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
@@ -37,31 +38,113 @@
             </div>
         </nav>
 
+            <!-- HEADER SECTION -->
             <header id="header">
                 <nav id="header-nav">
-                    <a id="home" href="index.html" class="animated fadeInLeft"><h4>MichaelBell</h4></a>
+                    <a id="home" href="#top" class="animated fadeInLeft"><h4>MichaelBell</h4></a>
                     <ul class="animated fadeInRight">
                         <li class="header-nav-links">
-                            <a href="./about.html">About</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li class="header-nav-links">
-                            <a href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="header-nav-links">
-                            <a href="./contact.html">Contact</a>
+                            <a href="#contact-section">Contact</a>
                         </li>
                     </ul>
-                    <!-- <a><i id="burger-menu" style="font-size:30px;cursor:pointer" onclick="toggleNav()"class="fas fa-bars"></i></a> -->
+                    <a id="burger-menu" class="animated fadeInRight"><i style="font-size:30px;cursor:pointer" onclick="toggleNav()"class="fas fa-bars"></i></a>
                 </nav>
             </header>
+            <!-- END HEADER SECTION -->
+
             <main>
                 <section id="hero-section">
-                    <h2 id="hero-header" class="animated fadeIn delay-1s">A curious and pragmatic software developer with a 
+                    <h2 id="hero-header" data-aos="zoom-in" data-aos-duration="2000">A curious and pragmatic software developer with a 
                             relentless growth mindset.</h2>
-                    <p id="brand-statement" class="animated fadeIn delay-2s">I provide a cross-functional perspective that spans across engineering and business to 
+                    <p id="brand-statement" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="3000">I provide a cross-functional perspective that spans across engineering and business to 
                         achieve high-quality outcomes for stakeholders. I believe in continuous learning 
                         and the power of collaboration to achieve success.
                     </p>
+                    <!-- <span id="hero-scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">SCROLL DOWN
+                        <br>
+                        <i class="fas fa-chevron-down"></i>
+                    </span> -->
+                </section>
+                <section id="portfolio">
+                    <h2 class="section-header" data-aos="fade-up" data-aos-duration="2000">Featured Projects</h2>
+                    <div class="projects-wrapper" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="each-project">
+                            <div class="project-img" id="cashboard-img"></div>
+                            <div class="project-text">
+                                
+                                <div class="card-link-wrapper">
+                                    <a class="project-link" href='https://cash-board.netlify.com/' target="_blank">Demo</a>
+                                    <a class="project-link" href="https://github.com/MdotB/project-4-react" target="_blank">Repo</a>
+                                </div>
+                                <ul class="skills-wrapper">
+                                    <li class="skills">ES6</li>
+                                    <li class="skills">React</li>
+                                    <li class="skills">Node</li>
+                                    <li class="skills">Express</li>
+                                    <li class="skills">MongoDB</li>
+                                </ul>
+                                <p class="project-paragraph">Budgeting tool</p>
+                                <h3 class="project-header">Cash Board</h3>
+                            </div>
+                            
+                        </div>
+                        <div class="each-project">
+                            <div class="project-img" id="strooper-img"></div>
+                            <div class="project-text">
+                                <div class="card-link-wrapper">
+                                    <a class="project-link" href='https://pages.git.generalassemb.ly/MBell/Project-1-Strooper/' target="_blank">Demo</a>
+                                    <a class="project-link" href="https://git.generalassemb.ly/MBell/Project-1-Strooper" target="_blank">Repo</a>
+                                </div>
+                                <ul class="skills-wrapper">
+                                    <li class="skills">HTML5</li>
+                                    <li class="skills">CSS3</li>
+                                    <li class="skills">ES6</li>
+                                </ul>
+                                
+                                <p class="project-paragraph">A 2-D timed-response browser game.</p>
+                                
+                                
+                                <h3 class="project-header">Strooper</h3>
+                            </div>
+                        </div>
+                        <div class="each-project">
+                            <div class="project-img" id="fotogenic-img"></div>
+                            <div class="project-text">
+                                <div class="card-link-wrapper">
+                                    <a class="project-link" href='https://protected-fortress-17795.herokuapp.com/' target="_blank">Demo</a>
+                                    <a class="project-link" href="https://git.generalassemb.ly/MBell/face-detective" target="_blank">Repo</a>
+                                </div>
+                                <ul class="skills-wrapper">
+                                    <li class="skills">ES6</li>
+                                    <li class="skills">Node</li>
+                                    <li class="skills">Express</li>
+                                    <li class="skills">Handlebars</li>
+                                    <li class="skills">MongoDB</li>
+                                    <li class="skills">Passport</li>
+                                </ul>
+                                <p class="project-paragraph">Photo sharing app</p>
+                                <h3 class="project-header">Fotogenic</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </section>
+            <section id="contact-section" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="3000">
+                    <h2 class="animated fadeIn delay-1s" id="contact-header" class="section-header">I'd <strong>love</strong> to hear from you.</h2>
+                    <form class="animated fadeIn delay-2s" action="https://formspree.io/michaelbell.va@gmail.com" method="POST">
+                        <div id="name-fields">
+                            <input type="text" placeholder="First Name" id="fname" name="name" required>
+                            <input type="text" placeholder="Last Name" name="name" required>
+                        </div>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="text" placeholder="Subject" name="subject" required>
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <div id="under-button"></div>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </section>
             </main>
         <footer>
@@ -81,8 +164,11 @@
                 </ul>
             </nav>
         </footer>
-        <!-- </div> -->
     </div>
-    <script src='script.js'></script>
+<script src='script.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init()
+</script>
 </body>
 </html>

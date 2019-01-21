@@ -6,7 +6,7 @@ html, body {
     width: 100vw;
     height: 100%;
     color: #fff;
-    background-color: #eee;
+    background-color: #fff;
     scroll-behavior: smooth;
     font-family: 'Gilroy', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -218,79 +218,23 @@ hr {
 } */
 .projects-wrapper {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 5px;
     padding: 0;
 }
 .section-header {
     font-size: 26px;
     font-weight: 400;
     color: #333;
-    margin: 40px 0;
+    margin-bottom: 20px;
 }
-.each-project {
-    width: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all .2s ease-in-out;
-    border-radius: 5px;
-    margin: 0 15px 15px 0;
-    overflow: hidden;
-    padding: 30px;
-}
-.each-project:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transform: scale(1.04);
-}
-#p4-container {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.project-header {
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #777;
-    font-size: 30px;
-    font-weight: 500;
-    margin: 0;
-}
-.project-paragraph {
-    font-size: 18px;
-    margin: 0 0 10px 0;
-    text-align: left;
-    color: #333;
-    max-width: 300px;
-}
-.skills-wrapper {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-.skills {
-    font-size: 12px;
-    color: #fff;
-    background-color: #333;
-    padding: 1px 5px;
-    border-radius: 2px;
-    margin-bottom: 5px;
-}
-.card-link-wrapper {
-    align-self: flex-end;
-    justify-self: flex-end;
-    padding: 15px 0;
-}
-.project-link {
-    color: #4392F1;
-    font-size: 30px;
-}
+
+
 #contact-me {
-    background-color: #4392F1;
+    background-color: #eee;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -337,7 +281,7 @@ textarea {
     transform: translateY(50%);
     width: 75px;
     height: 75px;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 50%;
     margin-top: 30px;
 }
@@ -399,27 +343,7 @@ li:last-child {
     font-size: 28px;
     margin: 0;
 }
-@media screen and (max-width: 1010px) {
-    #brand-statement {
-        font-size: 1em;
-    }
-    #headshot {
-        height: 270px;
-    }
-}
-@media screen and (max-width: 805px) {
-}
-@media screen and (max-width: 780px) {
-    .page-marker {
-        display: none;
-    }
-    #About-Me {
-        align-items: center;
-        height: auto;
-        padding: 20px;
-        margin: 20px 0;
-    }
-}
+
 @media screen and (max-width: 500px) {
     .content-wrapper {
         height: 100%;

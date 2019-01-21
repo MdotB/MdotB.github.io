@@ -4,9 +4,9 @@
 // window.onscroll = () => {
 //   let currentScrollPos = window.pageYOffset;
 //   console.log(currentScrollPos)
-//   if (currentScrollPos > 895) {
-//     document.getElementById("header").style.color = "#333";
-//     document.getElementById("header").style.textShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
+//   if (currentScrollPos > 50) {
+//     document.getElementById("header").style.backgroundColor = "#333";
+//     // document.getElementById("header").style.textShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
 
 //   } else {
 //     document.getElementById("header").style.color = "white";
@@ -15,6 +15,8 @@
 //   }
 //   prevScrollPos = currentScrollPos;
 // }
+
+
 
 const sideNav = document.getElementById("myNav");
 const pushNav = document.getElementById("pushNav");

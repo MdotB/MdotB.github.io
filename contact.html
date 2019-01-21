@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
@@ -35,27 +35,24 @@
                 </a>
             </div>
         </nav>
-            <header id="header">
-                <nav id="header-nav">
-                    <a id="home" href="index.html" class="animated fadeInLeft"><h4>MichaelBell</h4></a>
-                    <ul class="animated fadeInRight">
-                        <li class="header-nav-links">
-                            <a href="./about.html">About</a>
-                        </li>
-                        <li class="header-nav-links">
-                            <a href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="header-nav-links">
-                            <a href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- <a><i id="burger-menu" style="font-size:30px;cursor:pointer" onclick="toggleNav()"class="fas fa-bars"></i></a> -->
-                </nav>
-            </header>
+        <header id="header">
+            <nav id="header-nav">
+                <a id="home" href="index.html" class="animated fadeInLeft"><h4>MichaelBell</h4></a>
+                <ul class="animated fadeInRight">
+                    <li class="header-nav-links">
+                        <a href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="header-nav-links">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- <a><i id="burger-menu" style="font-size:30px;cursor:pointer" onclick="toggleNav()"class="fas fa-bars"></i></a> -->
+            </nav>
+        </header>
         <main>
-            <section id="contact-me">
-                <h2 id="contact-header" class="section-header">I'd <strong>love</strong> to hear from you.</h2>
-                <form action="https://formspree.io/michaelbell.va@gmail.com" method="POST">
+            <section id="contact-me" class="animated fadeIn">
+                <h2 class="animated fadeIn delay-1s" id="contact-header" class="section-header">I'd <strong>love</strong> to hear from you.</h2>
+                <form class="animated fadeIn delay-2s" action="https://formspree.io/michaelbell.va@gmail.com" method="POST">
                     <div id="name-fields">
                         <input type="text" placeholder="First Name" id="fname" name="name" required>
                         <input type="text" placeholder="Last Name" name="name" required>
