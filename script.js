@@ -19,17 +19,17 @@
 
 
 const sideNav = document.getElementById("myNav");
-const pushNav = document.getElementById("pushNav");
+const bodyGetsPushed = document.getElementById("pushNav");
 
 // Open nav overlay
 const openNav = () => {
   sideNav.style.width="250px";
-  pushNav.style.marginLeft="500px";
+  bodyGetsPushed.style.marginLeft="250px";
 }
 // Close nav overlay
 const closeNav = () => {  
   sideNav.style.width="0%";
-  pushNav.style.margin="0";
+  bodyGetsPushed.style.margin="0";
 }
 // Toggle nav
 const toggleNav = () => {
