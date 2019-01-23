@@ -1,20 +1,19 @@
 // // When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// let prevScrollPos = window.pageYOffset;
-// console.log(prevScrollPos);
-// window.onscroll = () => {
-//   let currentScrollPos = window.pageYOffset;
-//   console.log(currentScrollPos)
-//   if (currentScrollPos > 50) {
-//     document.getElementById("header").style.backgroundColor = "#333";
-//     // document.getElementById("header").style.textShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
+let prevScrollPos = window.pageYOffset;
+console.log(prevScrollPos);
+window.onscroll = () => {
+  let currentScrollPos = window.pageYOffset;
+  console.log(currentScrollPos)
+  if (currentScrollPos > 0) {
+    document.getElementById("header").style.boxShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
 
-//   } else {
-//     document.getElementById("header").style.color = "white";
-//     document.getElementById("header").style.boxShadow = "none"
+  } else {
+    document.getElementById("header").style.color = "white";
+    document.getElementById("header").style.boxShadow = "none"
 
-//   }
-//   prevScrollPos = currentScrollPos;
-// }
+  }
+  prevScrollPos = currentScrollPos;
+}
 
 
 
@@ -24,7 +23,7 @@ const bodyGetsPushed = document.getElementById("pushNav");
 // Open nav overlay
 const openNav = () => {
   sideNav.style.width="250px";
-  bodyGetsPushed.style.marginLeft="250px";
+  bodyGetsPushed.style.marginLeft="500px";
 }
 // Close nav overlay
 const closeNav = () => {  
