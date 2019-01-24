@@ -33,7 +33,7 @@ html, body {
 }
 
 a {
-    color: #999;
+    color: #333;
     font-weight: 100;
     font-size: 22px;
     text-decoration: none;
@@ -52,7 +52,6 @@ a:hover {
 
 /* SIDE_NAV */
 #myNav {
-    
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -62,7 +61,6 @@ a:hover {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
     background-color: #000;
     overflow-x: hidden;
     transition: .3s;
@@ -82,7 +80,8 @@ a:hover {
     font-size: 20px;
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
-    background-color: #222;
+    background-color: #333;
+    color: #fff;
     padding: 10px;
 }
 .overlay-content > a {
@@ -533,7 +532,6 @@ li:last-child {
         width: 100%;
         padding: 0;
         margin-bottom: 20px;
-        text-align: left;
     }
 
     /* PORTFOLIO SECTION */
@@ -541,6 +539,9 @@ li:last-child {
         padding: 0 10px;
         margin-bottom: 50px;
         align-items: center;
+    }
+    #icon-portfolio {
+        margin-top: 30px;
     }
     .h2-portfolio {
         font-size: 22px;
