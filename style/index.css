@@ -139,7 +139,7 @@ header {
     margin:0;
     padding: 0;
     font-size: 1.2em;
-    color: #1E90FF;
+    color: #333;
 }
 #header-nav > ul {
     padding: 0;
@@ -161,16 +161,17 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 0 150px 0;
-    height: 80vh;
-    transform: translateY(83px);
+    margin: 0 0 100px 0;
+    height: 85vh;
     background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("/Public/img/thomas-kvistholt-191153-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+#h1-header, #hero-subheader, #brand-statement {
+    transform: translateY(83px);
+}
 #h1-header {
     font-size: 75px;
     color: #fff;
@@ -229,8 +230,6 @@ main {
     flex-basis: auto;
     transition: all .3s ease-in-out;
     overflow: hidden;
-    border-radius: 5px;
-    border-bottom: 1px solid #ddd;
 }
 /* .each-project:after {
     content:"";
@@ -250,13 +249,15 @@ main {
     background-position: center top;
     width: 100%;
     height: 65%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 .project-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 35%;
-    padding: 10px 10px 10px 0;
+    padding: 10px 10px 10px 10px;
     transition: all .3s ease-in-out;
     
 }
@@ -264,15 +265,15 @@ main {
     background-image: url("/Public/img/Strooper.png");
 }
 #fotogenic-img {
-    background-image: url("/Public/img/Screen\ Shot\ 2019-01-23\ at\ 5.12.04\ PM.png");
+    background-image: url("/Public/img/Screen\ Shot\ 2019-01-23\ at\ 9.09.23\ PM.png");
 }
 #cashboard-img {
     background-image: url("/Public/img/cash-board.png");
 }
 .project-header {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-    font-size: 26px;
+    color: #777;
+    font-size: 24px;
     font-weight: 500;
     margin: 0;
 }
@@ -290,24 +291,27 @@ main {
 }
 .skills {
     font-size: 11px;
-    color: #fff;
-    background-color: #333;
+    color: #333;
+    background-color: #ddd;
     padding: 1px 5px;
     margin: 5px 0;
     border-radius: 2px;
 }
 .card-button-links {
+    background-color: #000;
+    color: #fff;
     padding: 10px;
     border-radius: 2px;
     font-size: 16px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 2px solid #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .card-button-links:hover {
-    background-color: #ddd;
+    background-color: #fff;
+    color: #333;
 }
-.card-link-wrapper > .project-link {
-    padding: 0;
-}
+
+/* END PORTFOLIO SECTION */
 
 /* CONTACT SECTION */
 #contact-section {
@@ -507,7 +511,6 @@ li:last-child {
         align-items: center;
         margin-bottom: 20px;
         padding: 0 30px;
-        height: 91vh;
     }
     #h1-header {
         margin: 0;
@@ -536,7 +539,7 @@ li:last-child {
     /* PORTFOLIO SECTION */
     #portfolio {
         padding: 0 10px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         align-items: center;
     }
     .h2-portfolio {

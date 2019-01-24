@@ -5,6 +5,7 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
   console.log(currentScrollPos)
   if (currentScrollPos > 0) {
+    document.getElementById("header").style.backgroundColor = "#fff";
     document.getElementById("header").style.boxShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
 
   } else {
