@@ -7,7 +7,8 @@ html, body {
     min-height: 100%;
     background-color: #fff;
     scroll-behavior: smooth;
-    font-family: 'Gilroy', sans-serif;
+    /* font-family: 'Gilroy', Arial, sans-serif; */
+    font-family: 'Gilroy', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: normal;
@@ -36,9 +37,6 @@ a {
     font-size: 22px;
     text-decoration: none;
     padding: 14px 10px 14px 10px;
-    color: #fff;
-}
-.header-nav-links > a {
     color: #fff;
 }
 #burger-menu {
@@ -112,9 +110,6 @@ a:hover {
   }
 
 /* HEADER */
-.charcoal-font {
-    color: #333;
-}
 #header {
     display: flex;
     flex-direction: column;
@@ -124,7 +119,6 @@ a:hover {
     color: #fff;
 }
 #header-nav {
-    color: #fff;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -134,22 +128,23 @@ a:hover {
     background-color: rgba(255,255,255,0);
     transition: all .3s ease-in-out;
     z-index: 2;
+    padding: 0 30px;
 }
 #home > h4 {
     margin:0;
     padding: 0;
     font-size: 1.2em;
-    color: #fff;
 }
 #header-nav > ul {
-    color: #fff;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.header-nav-links {
+    color: #fff;
+}
 /* MAIN */
 main {
     width: 100%;
@@ -170,10 +165,9 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #fff;
+    position: relative;
 }
-/* #h1-header, #hero-subheader, #brand-statement {
-    transform: translateY(83px);
-} */
 #h1-header {
     font-size: 75px;
     color: #fff;
@@ -182,9 +176,7 @@ main {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 #hero-subheader {
-    font-weight: bold;
     line-height: 1.2em;
-    color: #fff;
     font-size:31px;
     margin: 10px 0 0 0;
     padding: 0;
@@ -196,10 +188,18 @@ main {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.9em;
-    color: #fff;
     margin: 10px 0;
 }
-
+#hero-button {
+    padding: 15px 25px;
+    border: 5px solid #fff;
+    border-radius: 2px;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    position: absolute;
+    bottom: 20%;
+}
 .section-header {
     font-size: 40px;
     font-weight: 400;
@@ -218,6 +218,9 @@ main {
     padding: 0 30px;
     width: 100%;
 }
+#icon-portfolio {
+    margin-top: 75px;
+}
 .projects-wrapper {
     width: 100%;
     display: grid;
@@ -233,15 +236,6 @@ main {
     transition: all .3s ease-in-out;
     overflow: hidden;
 }
-/* .each-project:after {
-    content:"";
-    width:100%;
-    top:0;
-    left:0;
-    z-index:20;
-    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
-    position:absolute;
-} */
 .project-img {
     display: flex;
     justify-content: center;
@@ -312,7 +306,6 @@ main {
     background-color: #fff;
     color: #333;
 }
-
 /* END PORTFOLIO SECTION */
 
 /* CONTACT SECTION */
@@ -536,13 +529,10 @@ li:last-child {
 
     /* PORTFOLIO SECTION */
     #portfolio {
-        padding: 0 10px;
+        padding: 0;
         margin-bottom: 50px;
         align-items: center;
     }
-    #icon-portfolio {
-        margin-top: 30px;
-        }
     .h2-portfolio {
         font-size: 22px;
         margin: 15px 0;
