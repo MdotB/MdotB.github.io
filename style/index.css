@@ -31,23 +31,22 @@ html, body {
     transition: .3s;
     overflow: auto;
 }
-
 a {
-    color: #333;
     font-weight: 100;
     font-size: 22px;
     text-decoration: none;
     padding: 14px 10px 14px 10px;
+    color: #fff;
+}
+.header-nav-links > a {
+    color: #fff;
 }
 #burger-menu {
     display: none;
     margin-left: 30px;
 }
-.fa-bars {
-    font-weight: 600;
-}
 a:hover {
-    color: #ccc;
+    color: #ddd;
 }
 
 /* SIDE_NAV */
@@ -61,7 +60,7 @@ a:hover {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: #fff;
     overflow-x: hidden;
     transition: .3s;
     white-space: nowrap;
@@ -113,34 +112,37 @@ a:hover {
   }
 
 /* HEADER */
-header {
+.charcoal-font {
+    color: #333;
+}
+#header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0;
-    padding: 5px 0;
     width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #fff;
-    transition: all .3s ease-in-out;
-    border-bottom: 1px solid #eee;
-    z-index: 2;
+    color: #fff;
 }
 #header-nav {
-    /* z-index: 0; */
+    color: #fff;
     width: 100%;
-    max-width: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255,0);
+    transition: all .3s ease-in-out;
+    z-index: 2;
 }
 #home > h4 {
     margin:0;
     padding: 0;
     font-size: 1.2em;
-    color: #333;
+    color: #fff;
 }
 #header-nav > ul {
+    color: #fff;
     padding: 0;
     margin: 0;
     display: flex;
@@ -161,27 +163,28 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 0 100px 0;
-    height: 85vh;
-    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("/Public/img/thomas-kvistholt-191153-unsplash.jpg");
+    height: 100vh;
+    /* background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("/Public/img/thomas-kvistholt-191153-unsplash.jpg"); */
+    background: linear-gradient(-45deg,rgb(50, 153, 255),rgb(51, 51, 153));
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#h1-header, #hero-subheader, #brand-statement {
+/* #h1-header, #hero-subheader, #brand-statement {
     transform: translateY(83px);
-}
+} */
 #h1-header {
     font-size: 75px;
     color: #fff;
-    font-weight: 800;
+    font-weight: 400;
     margin: 0 0 20px 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 #hero-subheader {
     font-weight: bold;
     line-height: 1.2em;
-    color: #1E90FF;
+    color: #fff;
     font-size:31px;
     margin: 10px 0 0 0;
     padding: 0;
@@ -314,7 +317,7 @@ main {
 
 /* CONTACT SECTION */
 #contact-section {
-    background-color: #ccc;
+    background-color: #ddd;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -362,7 +365,7 @@ textarea {
     transform: translateY(50%);
     width: 75px;
     height: 75px;
-    background-color: #ccc;
+    background-color: #ddd;
     border-radius: 50%;
     margin-top: 30px;
 }
@@ -394,7 +397,7 @@ button:focus {
 
 /* FOOTER */
 footer {
-    background-color: #eee;
+    background: linear-gradient(-45deg,rgb(50, 153, 255),rgb(51, 51, 153));
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -405,7 +408,7 @@ footer {
 footer > p {
     margin: 0;
     text-align: center;
-    color: #333;
+    color: #fff;
 }
 li {
     display: inline-block;
@@ -492,9 +495,6 @@ li:last-child {
         margin: 0;
         padding: 20px 0;
     }
-    #burger-menu-icon {
-        color: #333;
-    }
     #header-nav > ul {
         display: none;
     }
@@ -542,7 +542,7 @@ li:last-child {
     }
     #icon-portfolio {
         margin-top: 30px;
-    }
+        }
     .h2-portfolio {
         font-size: 22px;
         margin: 15px 0;
@@ -577,9 +577,6 @@ li:last-child {
         justify-self: flex-end;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         transform: scale(1.04) translateY(50%);
-    }
-    #under-button {
-        background-color: #ccc;
     }
 
     /* FOOTER */

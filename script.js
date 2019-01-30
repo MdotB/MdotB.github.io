@@ -5,12 +5,13 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
   console.log(currentScrollPos)
   if (currentScrollPos > 0) {
-    document.getElementById("header").style.backgroundColor = "rgba(255,255,255,.9)";
-    document.getElementById("header").style.boxShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
+    document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,.9)";
+    document.getElementById("header-nav").style.boxShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
 
   } else {
-    document.getElementById("header").style.backgroundColor = "#fff";
-    document.getElementById("header").style.boxShadow = "none"
+    document.getElementById("header-nav").style.color = "#fff";
+    document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,0)";
+    document.getElementById("header-nav").style.boxShadow = "none";
 
   }
   prevScrollPos = currentScrollPos;
