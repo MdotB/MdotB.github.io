@@ -8,7 +8,7 @@ html, body {
     background-color: #fff;
     scroll-behavior: smooth;
     /* font-family: 'Gilroy', Arial, sans-serif; */
-    font-family: 'Gilroy', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: normal;
@@ -23,17 +23,7 @@ html, body {
     align-items: center;
     width: 100%;
 }
-#pushNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0; 
-    transition: .3s;
-    overflow: auto;
-}
 a {
-    font-weight: 100;
     font-size: 22px;
     text-decoration: none;
     padding: 14px 10px 14px 10px;
@@ -44,19 +34,20 @@ a {
     margin-left: 30px;
 }
 a:hover {
-    color: #ddd;
+    color: #ccc;
 }
 
-/* SIDE_NAV */
-#myNav {
+/* Toggle_NAV */
+#overlayNav {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100%;
-    width: 0%;
+    height: 0;
+    width: 100%;
     position: fixed;
-    z-index: 2;
-    top: 0;
+    z-index: 20;
+    top: 74px;
     left: 0;
     background-color: #fff;
     overflow-x: hidden;
@@ -121,16 +112,19 @@ a:hover {
 #header-nav {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     background-color: rgba(255,255,255,0);
     transition: all .3s ease-in-out;
     z-index: 2;
     padding: 0 30px;
 }
 #home > h4 {
+    display: inline-block;
     margin:0;
     padding: 0;
     font-size: 1.2em;
@@ -197,8 +191,6 @@ main {
     font-size: 1.2em;
     background-color: rgba(0,0,0,0);
     color: #fff;
-    position: absolute;
-    bottom: 20%;
 }
 .section-header {
     font-size: 40px;
@@ -264,7 +256,7 @@ main {
     background-image: url("/Public/img/Screen\ Shot\ 2019-01-23\ at\ 9.09.23\ PM.png");
 }
 #cashboard-img {
-    background-image: url("/Public/img/cash-board.png");
+    background-image: url("/Public/img/CashBoard.png");
 }
 .project-header {
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -477,7 +469,6 @@ li:last-child {
         padding: 0 0;
     }
     #header-nav {
-        justify-content: space-between;
         padding: 0 30px;
     }
     #home {

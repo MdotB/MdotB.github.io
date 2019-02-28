@@ -18,7 +18,7 @@
     <div id="top" class="content-wrapper">
 
         <!--Pop-out nav menu-->
-        <nav id="myNav" class="overlay" style="width: 0%">
+        <nav id="overlayNav" class="overlay">
             <div class="overlay-content">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
                 <h2>My Recent Projects</h2>
@@ -37,7 +37,6 @@
                 </a>
             </div>
         </nav>
-            <div id="pushNav">
                 <!-- HEADER SECTION -->
             <header id="header">
                     <nav id="header-nav">
@@ -64,7 +63,7 @@
                             achieve high-quality outcomes for stakeholders. I believe in continuous learning 
                             and the power of collaboration to achieve success.
                         </p>
-                        <button id="hero-button"><a href="#portfolio">Explore</a></button>
+                        <button id="hero-button" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="3000"><a href="#portfolio">Explore</a></button>
                         <!-- <span id="hero-scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">SCROLL DOWN
                             <br>
                             <i class="fas fa-chevron-down"></i>
@@ -75,7 +74,7 @@
     
                 <main>
                     <section id="portfolio">
-                        <img id="icon-portfolio" src="/Public/img/perfect-worker-svgrepo-com.svg" alt="icon of desk/workstation" width="100px" height="100px" data-aos="fade-up" data-aos-duration="2000">
+                        <img id="icon-portfolio" src="/Public/img/workplace-svgrepo-com.svg" alt="icon of desk/workstation" width="100px" height="100px" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="section-header" data-aos="fade-up" data-aos-duration="2000">Featured Projects</h2>
                         <div class="projects-wrapper" data-aos="fade-up" data-aos-duration="3000">
                             <div class="each-project">
@@ -168,8 +167,6 @@
                     </ul>
                 </nav>
             </footer>
-            </div>
-            
     </div>
 <script src='script.js'></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

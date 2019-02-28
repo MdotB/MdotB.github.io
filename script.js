@@ -25,22 +25,22 @@ window.onscroll = () => {
 
 
 
-const sideNav = document.getElementById("myNav");
-const pushedBody = document.getElementById("pushNav");
+const overlayNav = document.getElementById("overlayNav");
+// const pushedBody = document.getElementById("pushNav");
 
 // Open nav overlay
 const openNav = () => {
-  sideNav.style.width="250px";
-  pushedBody.style.marginLeft="500px";
+  overlayNav.style.height="100vh";
+  // pushedBody.style.marginTop="500px";
 }
 // Close nav overlay
 const closeNav = () => {  
-  sideNav.style.width="0%";
-  pushedBody.style.margin="0";
+  overlayNav.style.height="0%";
+  // pushedBody.style.margin="0";
 }
 // Toggle nav
 const toggleNav = () => {
-    if (sideNav.style.width === "0%") {
+    if (overlayNav.style.height === "0%") {
       openNav()
     } else {
       closeNav()
