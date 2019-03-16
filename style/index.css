@@ -32,10 +32,7 @@ a {
     padding: 14px 10px 14px 10px;
     color: #fff;
 }
-#burger-menu {
-    display: none;
-    margin-left: 30px;
-}
+
 a:hover, .dropbtn:hover {
     color: #ccc;
 }
@@ -69,38 +66,19 @@ a:hover, .dropbtn:hover {
 .overlay-content > h2 {
     width: 100%;
     font-size: 20px;
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+    color: #333;
+    padding: 5px 25px;
 }
 .overlay-content > a {
     padding: 5px 25px;
     word-wrap: none;
     text-decoration: none;
     font-size: 24px;
-    color: #818181;
-    border-bottom: 1px solid #333;
+    color: #000;
     display: block;
     transition: all .2s ease-in-out;
-  }
-.overlay-content a:hover, .overlay-content a:focus {
-    color: #fff;
-    background-color: #444;
-    transform: scale(1.01);
-  }
-.overlay-content > .closebtn {
-    align-self: flex-end;
-    font-size: 40px;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-.overlay-content > .closebtn:hover {
-      background-color: #000;
   }
 
 /* HEADER */
@@ -146,7 +124,27 @@ header {
 .header-nav-links {
     color: #fff;
 }
-
+#burger-menu {
+    display: none;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 4px);
+    transform: rotate(-45deg) translate(-9px, 4px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -5px);
+    transform: rotate(45deg) translate(-8px, -5px);
+  }
 /* MAIN */
 main {
     width: 100%;
@@ -397,7 +395,7 @@ button:focus {
 
 /* FOOTER */
 footer {
-    background: #000;
+    background: rgb(51, 51, 153);
     padding-top: 75px;
     color: #eee;
 }
@@ -477,9 +475,6 @@ li:last-child {
     .overlay-content > a {
         padding: 15px 25px;
     }
-    .closebtn > i { 
-        font-size: 25px;
-    }
 
     /* HEADER */
     #header-nav {
@@ -492,6 +487,7 @@ li:last-child {
         display: inline-block;
         margin: 0;
         padding: 20px 0;
+        cursor: pointer;
     }
     #header-nav > ul {
         display: none;
