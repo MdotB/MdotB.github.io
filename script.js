@@ -34,7 +34,7 @@ const overlayNav = document.getElementById("overlayNav");
 
 // Open nav overlay
 const openNav = () => {
-  overlayNav.style.height="60vh";
+  overlayNav.style.height="70vh";
   overlayNav.style.borderBottom="3px solid #000";
   overlayNav.style.borderTop="2px solid #000";
 }
