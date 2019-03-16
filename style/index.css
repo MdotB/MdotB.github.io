@@ -21,7 +21,7 @@ html, body {
 }
 .wrapper {
     width: 96%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -95,17 +95,18 @@ header {
 }
 #header-nav {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(255,255,255,0);
     transition: all .3s ease-in-out;
     z-index: 2;
-    padding: 0 30px;
+}
+#nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 #home > span {
     display: inline-block;
@@ -113,7 +114,7 @@ header {
     padding: 0;
     font-size: 1.2em;
 }
-#header-nav > ul {
+#nav-wrapper > ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -156,7 +157,7 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: calc(100vh - 73px);
+    height: calc(100vh - 72px);
     color: #fff;
     position: relative;
 }
@@ -488,7 +489,7 @@ li:last-child {
         padding: 20px 0;
         cursor: pointer;
     }
-    #header-nav > ul {
+    #nav-wrapper > ul {
         display: none;
     }
 
