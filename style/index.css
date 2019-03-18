@@ -197,12 +197,12 @@ main {
     border: 2px solid #fff;
     border-radius: 300000px;
     font-size: 1.2em;
-    background-color: rgba(0,0,0,0);
+    background-color: #fff;
     color: #fff;
 }
 
 .hero-button:hover, #hero-button:hover {
-    background-color: #fff;
+    background-color: rgba(0,0,0,0);
     color: #000;
 }
 .section-header {
