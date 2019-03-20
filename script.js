@@ -9,8 +9,11 @@ window.onscroll = () => {
   console.log(currentScrollPos)
 
   const headerNavLinks = document.querySelectorAll(".header-nav-links");
+  const contactLink = document.getElementById("contact");
   
   if (currentScrollPos > 0) {
+    contactLink.style.background = "#fff";
+    contactLink.style.border = "2px solid #e83a30"
     headerNavLinks.forEach(headerLink => headerLink.style.color = "#333");
     burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#333");
     document.getElementById("header-nav")
@@ -18,6 +21,7 @@ window.onscroll = () => {
     document.getElementById("header-nav")
       .style.boxShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
   } else {
+      contactLink.style.background = "#e83a30";
       headerNavLinks.forEach(headerLink => headerLink.style.color = "#fff");
       burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#fff");
       document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,0)";

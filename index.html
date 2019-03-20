@@ -18,7 +18,6 @@
         <!--Pop-out nav menu-->
         <nav id="overlayNav" class="overlay" role="navigation" style="height:0%; border:none">
             <div class="overlay-content">
-                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a> -->
                 <h2>FEATURED PROJECTS</h2>
                 <a href='https://cash-board.netlify.com/' target="_blank">Cash Board</a>
                 <a href='https://pages.git.generalassemb.ly/MBell/Project-1-Strooper/' target="_blank">Strooper</a>
@@ -44,15 +43,15 @@
                                 <a id="home" href="#top" class="animated fadeInLeft header-nav-links"><span>MB</span></a>
                                 <ul class="animated fadeInRight">
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1h2dF1YFbHd3B6POLSBcPZ6Y1XriaV03o/view?usp=sharing" 
-                                            class="header-nav-links">Resume
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a class="header-nav-links" href="#portfolio">Portfolio</a>
                                     </li>
                                     <li>
-                                        <a href="#contact-section" class="header-nav-links">Contact</a>
+                                        <a href="https://drive.google.com/file/d/1h2dF1YFbHd3B6POLSBcPZ6Y1XriaV03o/view?usp=sharing" 
+                                            class="header-nav-links">Resume
+                                        </a>
+                                    </li>   
+                                    <li>
+                                        <a href="#contact-section" id="contact" class="header-nav-links">Contact</a>
                                     </li>
                                 </ul>
                                 <div id="burger-menu" class="animated fadeInRight" onclick="toggleNav(this)">
@@ -64,13 +63,13 @@
                     </nav>
                             <section id="hero-section">
                                 <div id="hero-title">
-                                    <h1 id="h1-header" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">Michael Bell</h1>
-                                    <h2 id="hero-subheader" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">Full-Stack | JavaScript | Python</h2>
+                                    <h1 id="h1-header" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">Michael Bell</h1>
+                                    <h2 id="hero-subheader" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">Full-Stack | JavaScript | Python</h2>
                                     <!-- <p id="brand-statement" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="3000">I provide a cross-functional perspective that spans across engineering and business to 
                                         achieve high-quality outcomes for stakeholders. I believe in continuous learning 
                                         and the power of collaboration to achieve success.
                                     </p> -->
-                                    <a id="hero-button" href="#portfolio" class="hero-button" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="3000">Explore</a>
+                                    <a id="hero-button" href="#portfolio" class="hero-button" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">Explore</a>
                                 </div>
                                 
                             
@@ -79,13 +78,11 @@
                         </header>
                         <!-- END HEADER SECTION -->
                 
-                    
-    
-                <main class="wrapper">
+                <main>
+                    <div class="wrapper">
                     <section id="portfolio">
-                        <img id="icon-portfolio" src="/Public/img/workplace-svgrepo-com.svg" alt="icon of desk/workstation" width="100px" height="100px" data-aos="fade-up" data-aos-duration="2000">
-                        <h2 class="section-header" data-aos="fade-up" data-aos-duration="2000">Featured Projects</h2>
-                        <div class="projects-wrapper" data-aos="fade-up" data-aos-duration="3000">
+                        <h2 id="portfolio-header" data-aos="fade-up" data-aos-duration="1000">Featured Projects</h2>
+                        <div class="projects-wrapper" data-aos="fade-up" data-aos-duration="1000">
                             <div class="each-project">
                                 <div class="project-img" id="cashboard-img">
                                     <div class="card-link-wrapper">
@@ -145,10 +142,11 @@
                             </div>
                         </div>
                 </section>
+                  </div>
                 </main>
                 <div id="contact-section">
                     <h2 class="animated fadeIn delay-1s" id="contact-header" class="section-header">I'd <strong>love</strong> to hear from you.</h2>
-                    <form class="animated fadeIn delay-2s" action="https://formspree.io/michaelbell.va@gmail.com" method="POST">
+                    <form action="https://formspree.io/michaelbell.va@gmail.com" method="POST">
                         <div id="name-fields">
                             <input type="text" placeholder="First Name" id="fname" name="name" required>
                             <input type="text" placeholder="Last Name" name="name" required>
