@@ -101,7 +101,7 @@ header::after{
     bottom: 0;
     transform-origin: right bottom;
     transform: skewY(-15deg);
-    -webkit-transform: skewY(-16deg) translate(0, -90px);
+    -webkit-transform: skewY(-15deg);
     -ms-transform: skewY(-15deg);
   }
 
@@ -235,7 +235,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 250px;
 }
 
 #brand-statement {
@@ -470,11 +470,7 @@ li:last-child {
 }
 
 @media screen and (max-width: 1024px) {
-    header::after{
-        transform: skewY(-15deg);
-        -webkit-transform: skewY(-16deg) translate(0, -215px);
-        -ms-transform: skewY(-15deg);
-    }
+    
     /* HERO SECTION */
     #hero-section{
         height: 48vh;
@@ -483,7 +479,7 @@ li:last-child {
 
     /* BRAND SECTION */
     #brand-section{
-        padding-top: 110px;
+        padding-top: 180px;
         align-items: center;
     }
 }
@@ -581,7 +577,7 @@ li:last-child {
 
     /* BRAND SECTION */
     #brand-section {
-        padding-top: 85px;
+        /* padding-top: 85px; */
     }
 
     /* PORTFOLIO SECTION */
@@ -634,12 +630,7 @@ li:last-child {
 }
 
 @media screen and (max-width: 375px){
-    header::after{
-        transform: skewY(-15deg);
-        -webkit-transform: skewY(-16deg) translate(0, -80px);
-        -ms-transform: skewY(-15deg);
-    }
     #brand-section{
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
 }
