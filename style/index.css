@@ -185,24 +185,32 @@ main {
 #hero-title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     max-width: 500px;
     height: 100%;
     z-index: 2;
-    transform: translateY(60px);
 }
+#hero-title > div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#hero-title > div > * {
+    font-size: 30px;
+}
+
 #h1-header {
     font-size: 75px;
     color: #fff;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin: 0;
     font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #hero-subheader {
     line-height: 1.2em;
-    font-size:27px;
-    margin: 10px 0 0 0;
+    font-size:25px;
+    margin: 30px 0;
     padding: 0;
     color: #ACB5CA;
 }
@@ -512,10 +520,7 @@ li:last-child {
 
     /* HERO SECTION */
 
-    /* PORTFOLIO SECTION */
-    #portfolio {
-        padding: 0 50px;
-    }
+    /* PORTFOLIO SECTION *
 
     /* CONTACT SECTION */
     #contact-section {
@@ -583,10 +588,8 @@ li:last-child {
         /* font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     }
     #hero-subheader {
-        font-size: 16px;
-        margin-bottom: 15px;
-        padding: 20px 0 0 0;
-        margin: 0;
+        font-size: 15.1px;
+        margin: 20px 0;
     }
     #headshot {
         margin-top: 30px;
@@ -602,7 +605,7 @@ li:last-child {
     /* PORTFOLIO SECTION */
     #portfolio {
         padding: 0;
-        margin-bottom: 70px;
+        padding-bottom: 70px;
         align-items: center;
     }
     .h2-portfolio {
