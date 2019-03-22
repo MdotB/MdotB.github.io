@@ -100,9 +100,9 @@ header::after{
     z-index: 0;
     bottom: 0;
     transform-origin: right bottom;
-    transform: skewY(-15deg);
-    -webkit-transform: skewY(-15deg);
-    -ms-transform: skewY(-15deg);
+    transform: skewY(-12deg);
+    -webkit-transform: skewY(-12deg);
+    -ms-transform: skewY(-12deg);
   }
 
 #header-nav {
@@ -212,7 +212,7 @@ main {
     padding: 15px 25px;
     margin-top: 20px;
     border: 2px solid #fff;
-    border-radius: 300000px;
+    border-radius: 3px;
     font-size: 1.2em;
     background-color: #fff;
     color: #000;
@@ -223,10 +223,11 @@ main {
     color: #fff;
 }
 #portfolio-header {
+    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 40px;
     font-weight: 400;
     color: #333;
-    margin: 100px 0 100px 0;
+    margin: 100px 0 50px 0;
 }
 
 /* BRAND SECTION */
@@ -368,9 +369,10 @@ main {
     height: 100%;
     z-index: 1;
     background: inherit;
-    transform-origin: left top;
-    transform: skewY(-15deg);
-    -webkit-transform: skewY(-15deg);
+    transform-origin: 0;
+    transform: skewY(-12deg);
+    -webkit-transform: skewY(-12deg);
+    -ms-transform: skewY(-12deg);
 }
 
 #contact-header {
