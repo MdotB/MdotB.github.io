@@ -97,7 +97,7 @@ header::after{
     height: 100%;
     position: absolute;
     background: inherit;
-    z-index: 1;
+    z-index: 0;
     bottom: 0;
     transform-origin: right bottom;
     transform: skewY(-15deg);
@@ -178,7 +178,7 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 55vh;
+    height: 50vh;
     color: #fff;
     position: relative;
 }
@@ -254,7 +254,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0;
+    padding-bottom: 120px;
     width: 100%;
 }
 #icon-portfolio {
@@ -350,6 +350,7 @@ main {
 /* CONTACT SECTION */
 #contact-section {
     background-color: #333;
+    height: 55vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -358,9 +359,24 @@ main {
     margin: 0;
     position: relative;
 }
+
+#contact-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: inherit;
+    transform-origin: left top;
+    transform: skewY(-15deg);
+    -webkit-transform: skewY(-15deg);
+}
+
 #contact-header {
     align-self: center;
     color: #fff;
+    z-index: 2;
 }
 form {
     display: flex;
@@ -369,6 +385,7 @@ form {
     position: relative;
     width: 500px;
     padding: 0 15px;
+    z-index: 2;
 }
 #name-fields {
     display: flex;
@@ -577,13 +594,13 @@ li:last-child {
 
     /* BRAND SECTION */
     #brand-section {
-        /* padding-top: 85px; */
+        padding-top: 85px;
     }
 
     /* PORTFOLIO SECTION */
     #portfolio {
         padding: 0;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
         align-items: center;
     }
     .h2-portfolio {
