@@ -1,5 +1,8 @@
-const burgerBars = document.querySelectorAll(".bar");
 const burger = document.getElementById("burger-menu");
+const burgerBars = document.querySelectorAll(".bar");
+const contactLink = document.getElementById("contact");
+const headerNavLinks = document.querySelectorAll(".header-nav-links");
+const overlayNav = document.getElementById("overlayNav");
 
 // Reveal headerNav on scroll from top.
 let prevScrollPos = window.pageYOffset;
@@ -8,20 +11,19 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
   console.log(currentScrollPos)
 
-  const headerNavLinks = document.querySelectorAll(".header-nav-links");
-  const contactLink = document.getElementById("contact");
   
   if (currentScrollPos > 0) {
     contactLink.style.background = "#fff";
-    contactLink.style.border = "2px solid #e83a30"
+    // contactLink.style.border = "2px solid #fff"
     headerNavLinks.forEach(headerLink => headerLink.style.color = "#333");
     burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#333");
     document.getElementById("header-nav")
       .style.backgroundColor = "rgba(255,255,255,1)";
     document.getElementById("header-nav")
-      .style.boxShadow = "0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.23)";
+      .style.boxShadow = "0 2px 4px rgba(0,0,0,.5)";
   } else {
-      contactLink.style.background = "#e83a30";
+      contactLink.style.background = "#324dfc";
+      contactLink.style.border = "1px solid #fff";
       headerNavLinks.forEach(headerLink => headerLink.style.color = "#fff");
       burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#fff");
       document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,0)";
@@ -33,8 +35,6 @@ window.onscroll = () => {
 function myFunction(x) {
   x.classList.toggle("change");
 }
-
-const overlayNav = document.getElementById("overlayNav");
 
 // Open nav overlay
 const openNav = () => {
