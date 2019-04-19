@@ -11,7 +11,12 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
   console.log(currentScrollPos)
 
-  
+  //------------------------
+  const test = (a, b) => {
+    console.log(a === b)
+  }
+  //-------------------------
+
   if (currentScrollPos > 0) {
     contactLink.style.background = "#fff";
     // contactLink.style.border = "2px solid #fff"
