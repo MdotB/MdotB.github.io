@@ -198,7 +198,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    max-width: 500px;
+    max-width: 550px;
     height: 100%;
     z-index: 2;
 }
@@ -216,7 +216,8 @@ main {
     color: #fff;
     font-weight: 400;
     margin: 0;
-    font-family: gt-america, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 #hero-subheader {
     line-height: 1.2em;
