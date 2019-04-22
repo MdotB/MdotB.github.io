@@ -244,6 +244,11 @@ main {
     padding: 250px 0 50px 0;
 }
 
+#h2-about-me{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
 #brand-statement {
     padding: 0;
     text-align: left;
@@ -652,11 +657,18 @@ li:last-child {
   
 }
 
+/* iPhone X */
 @media screen and (max-width: 375px){
+    #h1-header{
+        font-size: 39px;
+    }
+    #hero-subheader{
+        font-size: 14px;
+    }
+    #h2-about-me{
+        margin: 20px;
+    }
     #portfolio{
         padding-bottom: 150px;
-    }
-    .projects-wrapper{
-
     }
 }
