@@ -22,8 +22,9 @@ window.onscroll = () => {
     document.getElementById("header-nav")
       .style.boxShadow = "0 2px 4px rgba(0,0,0,.5)";
   } else {
-      contactLink.style.background = "#324dfc";
+      contactLink.style.background = "rgba(0,0,0,0)";
       contactLink.style.border = "1px solid #fff";
+      contactLink.addEventListener('mouseover', () => contactLink.style.background = '#2434ad')
       headerNavLinks.forEach(headerLink => headerLink.style.color = "#fff");
       burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#fff");
       document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,0)";
