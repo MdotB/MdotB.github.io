@@ -130,10 +130,11 @@ header::after{
 }
 #home > span {
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     display: inline-block;
     margin:0;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 #nav-wrapper > ul {
     padding: 0;
@@ -222,6 +223,7 @@ main {
     font-weight: 600;
 }
 #hero-subheader {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.2em;
     font-size: 32px;
     margin: 30px 0;
@@ -686,6 +688,7 @@ li:last-child {
 @media screen and (max-width: 375px){
     #h1-header{
         font-size: 39px;
+        font-weight: 900;
     }
     #hero-subheader{
         font-size: 14px;
