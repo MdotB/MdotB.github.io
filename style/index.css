@@ -102,7 +102,7 @@ header::after{
     height: 180%;
     position: absolute;
     background: inherit;
-    border-bottom: 3px solid #10164b;
+    /* border-bottom: 3px solid #10164b; */
     z-index: 0;
     bottom: 0;
     transform-origin: right bottom;
@@ -688,7 +688,7 @@ li:last-child {
         font-size: 14px;
     }
     #brand-section{
-        padding-top: 110px;
+        padding-top: 100px;
     }
     #h2-about-me{
         font-size: 20px;
