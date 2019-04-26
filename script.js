@@ -13,12 +13,14 @@ window.onscroll = () => {
 
 
   if (currentScrollPos > 0) {
-    contactLink.style.background = "#fff";
+    contactLink.style.background = "rgba(0,0,0,0)";
     // contactLink.style.border = "2px solid #fff"
     headerNavLinks.forEach(headerLink => headerLink.style.color = "#333");
     burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#333");
     document.getElementById("header-nav")
-      .style.backgroundColor = "rgba(255,255,255,1)";
+      .style.backgroundColor = "rgba(255,255,255,.9)";
+    document.getElementById("header-nav")
+      .style.padding = "0"
     document.getElementById("header-nav")
       .style.boxShadow = "0 2px 4px rgba(0,0,0,.5)";
   } else {
@@ -29,6 +31,7 @@ window.onscroll = () => {
       burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#fff");
       document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,0)";
       document.getElementById("header-nav").style.boxShadow = "none";
+      document.getElementById("header-nav").style.padding = "10px 0";
     }
   prevScrollPos = currentScrollPos;
 }
