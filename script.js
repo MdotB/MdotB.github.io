@@ -8,35 +8,33 @@ const overlayNav = document.getElementById("overlayNav");
 let prevScrollPos = window.pageYOffset;
 console.log(prevScrollPos);
 window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset
   console.log(currentScrollPos)
 
 
   if (currentScrollPos > 0) {
-    contactLink.style.background = "rgba(0,0,0,0)";
-    // contactLink.style.border = "2px solid #fff"
-    headerNavLinks.forEach(headerLink => headerLink.style.color = "#333");
-    burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#333");
+    headerNavLinks.forEach(headerLink => headerLink.style.color = "#333")
+    burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#333")
     document.getElementById("header-nav")
-      .style.backgroundColor = "rgba(255,255,255,.9)";
+      .style.backgroundColor = "rgba(255,255,255,.9)"
     document.getElementById("header-nav")
-      .style.padding = "0"
+      .style.paddingTop = "0"
     document.getElementById("header-nav")
-      .style.boxShadow = "0 2px 4px rgba(0,0,0,.5)";
+      .style.boxShadow = "0 2px 4px rgba(0,0,0,.5)"
+      contactLink.style.border = "1px solid rgba(0,0,0,0)"
   } else {
-      contactLink.style.background = "rgba(0,0,0,0)";
-      contactLink.style.border = "1px solid #fff";
-      contactLink.addEventListener('mouseover', () => contactLink.style.background = '#2434ad')
+      contactLink.style.background = "rgba(0,0,0,0)"
+      contactLink.style.border = "1px solid #fff"
       headerNavLinks.forEach(headerLink => headerLink.style.color = "#fff");
       burgerBars.forEach(burgerBar => burgerBar.style.backgroundColor = "#fff");
       document.getElementById("header-nav").style.backgroundColor = "rgba(255,255,255,0)";
       document.getElementById("header-nav").style.boxShadow = "none";
-      document.getElementById("header-nav").style.padding = "10px 0";
+      document.getElementById("header-nav").style.paddingTop = "10px"
     }
   prevScrollPos = currentScrollPos;
 }
 
-function myFunction(x) {
+const myFunction = (x) => {
   x.classList.toggle("change");
 }
 
